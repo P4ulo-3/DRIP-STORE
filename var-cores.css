@@ -1,0 +1,22 @@
+:root {
+  /* ESCALA DE CINZA-------------- */
+  --darkGray: #1f1f1f;
+  --darkGray2: #474747;
+  --darkGray3: #666666;
+  --ligthGray: #8f8f8f;
+  --ligthGray2: #cccccc;
+  --ligthGray3: #f5f5f5;
+  --White1: #ffffff;
+
+  /* OUTRAS CORES------------------ */
+  --Primary: #c92071;
+  --Secondary: #b5b6f2;
+  --Tertiary: #991956;
+  --Error: #ee4266;
+  --Success: #52ca76;
+  --Warning: #f6aa1c;
+  --primaryG: #c92071;
+  --primaryGCor2: #edabca;
+  --SecondaryG: #b5b6f2;
+  --secondaryGCor2: #efefff;
+}
