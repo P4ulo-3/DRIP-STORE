@@ -1,42 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="variaveis.css">
-    <link rel="stylesheet" href="./css/index.css">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="variaveis.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delius&family=Inder&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Monsieur+La+Doulaise&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <title>Drip-Store Homepage</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Menu -->
-     <header>
-        <section>
-            <div>
-                <img src="./imgs/logo.png" alt="Digital Store">
-                <div>
-                    <input type="text" placeholder="Pesquisar produto...">
-                    <img src="imgs/Ellipse_739.png" alt="">
-                </div>
-                <a href="#">Cadastre-se</a>
-                <a href="#">
-                    <button>Entrar</button>
-                </a>
-                <img src="/imgs/Group 53581.png" alt="">
-                
-
+    <header>
+      <div class="interface">
+        <section class="container-menu">
+          <div class="div-logo">
+            <img class="logo" src="./imgs/logo.png" alt="Digital Store" />
+            <div class="container-input">
+              <input
+                class="input-menu"
+                type="text"
+                placeholder="Pesquisar produto..."
+              />
+              
+              <i class="bi bi-search lupa"></i>
             </div>
-            <div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Produtos</a></li>
-                        <li><a href="#">Categorias</a></li>
-                        <li><a href="#">Meus Pedidos</a></li>
-                    </ul>
-                </nav>
-            </div>
-            
+            <a class="cadastrar" href="#">Cadastre-se</a>
+            <a href="#">
+              <button>Entrar</button> 
+            </a>
+            <img class="carrinho" src="/imgs/Group 53581.png" alt="" />
+          </div>
+          <div class="div-nav">
+            <nav>
+              <ul>
+                <li><a class="ativa" href="#">Home</a></li>
+                <li><a class="n-ativa" href="#">Produtos</a></li>
+                <li><a class="n-ativa" href="#">Categorias</a></li>
+                <li><a class="n-ativa" href="#">Meus Pedidos</a></li>
+              </ul>
+            </nav>
+          </div>
         </section>
-     </header>
-</body>
+      </div>
+    </header>
+  </body>
 </html>
