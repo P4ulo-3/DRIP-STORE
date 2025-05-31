@@ -25,6 +25,7 @@
   --primaryGCor2: #edabca;
   --SecondaryG: #b5b6f2;
   --secondaryGCor2: #efefff;
+  --Body-01: #F9F8FE;
 }
 
 /* Menu ------------------ */
@@ -129,3 +130,17 @@
   border-bottom: 2px solid var(--Primary);
 }
 /* Menu Fim---------------- */
+
+/* Section filter ---------- */
+
+label {
+  font-weight: bold;
+}
+
+select {
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
