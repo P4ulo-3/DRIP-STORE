@@ -30,6 +30,7 @@ body {
   --SecondaryG: #b5b6f2;
   --secondaryGCor2: #efefff;
 }
+/* HEADER */
 header {
   background-color: var(--White1);
   width: 100%;
@@ -42,8 +43,7 @@ header img {
   width: 172.5px;
 }
 .header-container {
-  width: 80%;
-  padding: 0px 30px 0px 30px;
+  width: 90%;
 }
 .container-section-banner {
   background-image: linear-gradient(
@@ -55,14 +55,14 @@ header img {
   display: flex;
   justify-content: center;
 }
-
+/* BANNER, FUNDO E LOGIN */
 .container-div-banner {
-  width: 80%;
+  width: 90%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 100px;
-  padding: 30px;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 50px 0px;
 }
 .titulo-e-subtitulo {
   display: flex;
@@ -82,12 +82,12 @@ header img {
   color: var(--darkGray2);
 }
 .container-login {
-  width: 483px;
-  height: 460px;
+  width: 583px;
+  height: 560px;
   display: flex;
   background-color: var(--White1);
   padding: 30px;
-  gap: 15px;
+  gap: 30px;
   flex-direction: column;
   justify-content: center;
   align-items: start;
@@ -101,7 +101,7 @@ header img {
 }
 input {
   padding: 20px;
-  width: 423px;
+  width: 523px;
   height: 60px;
   font-size: 16px;
   letter-spacing: 0.75px;
@@ -132,7 +132,7 @@ form {
 }
 
 .botao-acessar-conta button {
-  width: 423px;
+  width: 523px;
   height: 48px;
   background-color: var(--Primary);
   border-radius: 8px;
@@ -158,5 +158,108 @@ form {
   display: flex;
 }
 #tenis1 {
-  width: 440px;
+  width: 540px;
+}
+/* FOOTER */
+footer {
+  background-color: var(--darkGray);
+  color: var(--White1);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  padding: 0px 0px 0px 0px;
+}
+footer nav ul li a {
+  color: var(--White1);
+  text-decoration: none;
+  font-size: 12px;
+}
+footer nav ul li a:hover {
+  border-bottom: 1px solid var(--White1);
+  opacity: 50%;
+  padding: 2px 0px;
+  transition: 0.4s ease;
+}
+footer nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+}
+
+footer h3 {
+  font-size: 14px;
+}
+#lorem {
+  width: 307px;
+  height: fit-content;
+  font-size: 12px;
+  line-height: 20px;
+}
+#logo-white {
+  width: 253px;
+  height: 44px;
+}
+.imagens-redes-footer {
+  height: 20px;
+
+  width: fit-content;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.container-geral-footer {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.logo-lorem-e-redes {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.footer-informacoes {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-categorias {
+  width: fit-content;
+}
+.footer-contatos {
+  width: 233px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-endereco-telefone {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-contatos p {
+  line-height: 20px;
+}
+
+hr {
+  background-color: var(--White1);
+  width: 100%;
+  opacity: 30%;
+}
+.footer-assinatura {
+  width: 90%;
+  font-size: 8px;
+  font: weight 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 20px;
 }
