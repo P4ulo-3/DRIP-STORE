@@ -28,6 +28,7 @@
   --Body-01: #F9F8FE;
 }
 
+
 /* Menu ------------------ */
 
 .interface {
@@ -133,14 +134,175 @@
 
 /* Section filter ---------- */
 
+.container-produtos-main{
+  max-width: 1440px;
+  background-color: red;
+  flex-direction: row;
+  display: flex;
+  width: 80%;
+  /* justify-content: space-between; */
+  align-items: flex-start;
+}
+
+.produtos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--Body-01);
+}
+
+.filtro {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
 label {
   font-weight: bold;
 }
 
 select {
   font-size: 16px;
-  padding: 5px;
+  padding: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
   cursor: pointer;
+}
+
+
+/* Asider ----------------------- */
+.asider{
+  background-color: var(--White1);
+  width: 25%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 320px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+legend {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.filtros {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: start;
+  align-items: start;
+}
+
+div {
+  margin-bottom: 0px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 1px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  accent-color: var(--Primary); /* Azul */
+  margin-right: 5px;
+  transform: scale(1.6);
+}
+
+.title-filter {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+div div {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+div div label {
+  font-weight: normal;
+}
+
+input:checked + label {
+  font-weight: bold;
+  color: var(--Primary);
+}
+
+input[type="radio"]:checked + label {
+  font-weight: bold;
+  color: var(--Primary);
+}
+
+form div {
+  padding-bottom: 1px;
+}
+
+form div:last-child {
+  border-bottom: none;
+}
+
+/* card ----------- */
+
+.container-cards {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: space-between;
+flex-wrap: wrap;
+width: 100%;
+height: 100%, auto;
+background-color: var(--Body-01);
+margin-top: 0px;
+padding-left: 20px;
+}
+.card {
+  position: relative;
+  width: 290px;
+  height: 437px;''
+  background-color: var(--Body-01);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-top: 0px;
+}
+
+.image-card {
+  width: 292px;
+  height: 439px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 6px 16px 30px 0px rgba(181, 182, 242, 0.3);
+
+
+}
+
+.desconto {
+  position: absolute;
 }
