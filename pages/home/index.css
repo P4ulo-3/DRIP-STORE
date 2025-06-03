@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "inder", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 :root {
@@ -63,7 +63,6 @@ body{
 
 .input-menu {
   font-weight: 400;
-  font-family: "Inder", sans-serif;
   background-color: rgba(71, 71, 71, 0.1);
   font-size: 1.1rem;
   padding-left: 1rem;
@@ -93,7 +92,6 @@ body{
 }
 
 .div-logo a button {
-  font-family: "inder", sans-serif;
   background-color: var(--Primary);
   color: var(--ligthGray3);
   width: 7.5rem;
@@ -119,7 +117,6 @@ body{
 
 .div-nav nav ul li a {
   text-decoration: none;
-  font-family: "inder", sans-serif;
   font-weight: 500;
 }
 
@@ -160,13 +157,11 @@ p.paragrafo-oferta {
   font-size: 1rem;
   font-weight: 700;
   color: var(--Warning);
-  font-family: "inder", sans-serif;
   letter-spacing: 2px;
 }
 
 .container-txt h1 {
-  width: 30rem;
-  font-family: "inder", sans-serif;
+  width: 33rem;
   color: var(--darkGray);
   font-size: 4rem;
   color: black;
@@ -185,7 +180,6 @@ p.parag-2 {
 }
 
 .container-txt a button {
-  font-family: "inder", sans-serif;
   background-color: var(--Primary);
   color: var(--ligthGray3);
   width: 13rem;
@@ -253,7 +247,6 @@ p.parag-2 {
 }
 
 .container-cards-destaques h4 {
-  font-family: "inder", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 2rem;
@@ -362,6 +355,10 @@ p.parag-2 {
 }
 
 /* Section produtos--------------------------- */
+.section-produtos {
+  padding: 4rem 0;
+}
+
 .container-cards-produto {
   display: flex;
   justify-content: space-between;
@@ -378,11 +375,14 @@ p.parag-2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 0.5rem var(--ligthGray2);
+  box-shadow: 0 0 1rem #e2dede;
+  color: #ffffff;
+  border-radius: 4px;
 }
 
 .img-produto img {
   margin-right: 2rem;
+
   
 }
 
@@ -415,3 +415,102 @@ p.parag-2 {
   color: var(--Primary); 
 }
 
+.item-card-produto .nome-produto{
+  font-size: 0.6rem;
+  letter-spacing: 0.75px;
+  font-weight: 700;
+  color: var(--ligthGray);
+  margin-top: 1rem;
+}
+
+.item-card-produto .modelo-produto {
+  font-size: 1.5rem;
+  letter-spacing: 0.75px;
+  font-weight: 400;
+  color: var(--darkGray2);
+  line-height: 2.6rem;
+}
+
+.div-precos {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.item-card-produto p.preco-novo {
+  font-size: 1.5rem;
+  letter-spacing: 0.75px;
+  font-weight: 700;
+  color: var(--darkGray);
+  
+}
+
+.item-card-produto p.preco-riscado {
+  font-size: 1.5rem;
+  letter-spacing: 0.75px;
+  font-weight: 400;
+  color: var(--ligthGray);
+  text-decoration: line-through;
+}
+/* Fim Section produtos--------------------------- */
+
+.div-box-oferta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70vh;
+  position: relative;
+  gap: 4rem;
+}
+.container-txt-oferta .paragrafo-oferta-especial{
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--Primary);
+  letter-spacing: 0.75px;
+}
+
+.container-txt-oferta .txt-especial-oferta{
+  font-size: 3rem;
+  /* text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black; */
+  letter-spacing: 1px;
+  line-height: 3.2rem;
+  color: var(--darkGray2);
+}
+.div-box-oferta .container-txt-oferta {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  /* margin-bottom: 4.3rem; */
+}
+
+.container-txt-oferta .parag-oferta {
+  line-height: 28px;
+  font-size: 1rem;
+  letter-spacing: 0.75;
+  font-weight: 400;
+  color: var(--darkGray2);
+}
+
+.container-txt-oferta button {
+  background-color: var(--Primary);
+  color: var(--ligthGray3);
+  width: 13rem;
+  height: 3rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.div-box-oferta .div-imagens{
+  position: relative;
+}
+
+.div-box-oferta .div-imagens .img-eclipse{
+  position: absolute;
+  top: -2.2rem;
+  left: 14%;
+}
