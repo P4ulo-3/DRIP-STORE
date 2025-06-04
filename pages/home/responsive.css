@@ -1,0 +1,35 @@
+@media (max-width: 1180px) {
+  .div-logo .logo {
+    width: 210px;
+    height: 35px;
+  }
+  .input-menu {
+    width: 500px;
+    height: 50px;
+    border-radius: 8px;
+  }
+
+  .item-card {
+    width: 32%;
+    height: auto;
+    padding: 1rem 0;
+  }
+  .box-cards-mais-destaques {
+    gap: 3rem;
+  }
+
+  .container-txt-oferta .txt-especial-oferta {
+    font-size: 2.5rem;
+    
+    line-height: 3rem;
+    
+  }
+  .img-tenis-oferta {
+    width: 500px;
+  }
+
+}
+
+@media (max-width: 1075px) {
+
+}
