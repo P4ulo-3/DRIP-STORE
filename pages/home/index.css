@@ -40,6 +40,11 @@ body{
 
 /* Menu ------------------ */
 
+.menu-hamburger {
+  font-size: 2.1rem;
+  cursor: pointer;
+  display: none;
+}
 .div-logo {
   display: flex;
   justify-content: space-between;
@@ -77,7 +82,7 @@ body{
 .lupa {
   position: absolute;
   right: 5%;
-  top: 30%;
+  top: 27%;
   cursor: pointer;
   font-size: 1.3rem;
   opacity: 60%;

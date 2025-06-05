@@ -20,16 +20,59 @@
 
   .container-txt-oferta .txt-especial-oferta {
     font-size: 2.5rem;
-    
+
     line-height: 3rem;
-    
   }
   .img-tenis-oferta {
     width: 500px;
   }
-
 }
 
 @media (max-width: 1075px) {
+  
+  .cadastrar,
+  .div-logo a button {
+    display: none;
+  }
 
+  .menu-hamburger {
+    display: block;
+  }
+
+  .div-nav nav {
+    display: none;
+  }
+  .container-input .lupa {
+    position: relative;
+    top: 0.2rem;
+    right: -1rem;
+    padding: 0 2%;
+  }
+  .item-card {
+    min-width: 350px;
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .div-logo {
+    justify-content: space-between;
+    gap: 1rem;
+    
+  }
+  .div-logo .logo {
+    width: 116px;
+    height: 24px;
+    top: 10%;
+    left: 25%;
+  }
+}
+
+@media (max-width: 1030px) {
+  .div-logo .logo {
+    width: 193px;
+    height: 35px;
+  }
+  .input-menu {
+    display: none;
+  }
 }
