@@ -109,8 +109,29 @@ body{
   font-weight: 700;
 }
 
+.buy {
+  position: relative;
+  cursor: pointer;
+}
+
 .carrinho {
   cursor: pointer;
+}
+
+.quant-car {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: var(--Primary);
+  color: var(--White1);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  top: -0.4rem;
+  right: -0.5rem;
+
 }
 
 .div-nav nav ul {
@@ -471,6 +492,9 @@ p.parag-2 {
   align-items: center;
   gap: 0.6rem;
 }
+.item-card-produto {
+  cursor: pointer;
+}
 
 .item-card-produto p.preco-novo {
   font-size: 1.5rem;
@@ -591,6 +615,14 @@ footer{
 .imagens-redes-footer img {
   width: 1.3rem;
   height: 1.4rem;
+}
+
+.footer-inf-categ {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10rem;
+  height: auto;
 }
 
 .footer-informacoes {
