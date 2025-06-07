@@ -154,6 +154,10 @@ form {
   justify-content: center;
   align-items: center;
 }
+.imagens-redes {
+  display: flex;
+  gap: 20px;
+}
 .imagens-tenis {
   display: flex;
 }
@@ -257,4 +261,126 @@ footer h3 {
   align-items: center;
   justify-content: center;
   padding-bottom: 20px;
+}
+@media (max-width: 375px) {
+  header {
+    height: 64px;
+  }
+  header img {
+    width: 138px;
+  }
+  .header-container {
+    width: 138px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #tenis1 {
+    display: none;
+  }
+
+  .container-div-banner {
+    display: flex;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-login {
+    width: 315px;
+    height: 572px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .titulo-e-subtitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .titulo-e-subtitulo h1 {
+    font-size: 22px;
+  }
+  .titulo-e-subtitulo p {
+    font-size: 14px;
+  }
+  .titulo-e-subtitulo a {
+    font-size: 14px;
+  }
+  .botao-acessar-conta button {
+    width: 255px;
+  }
+  input {
+    width: 255px;
+  }
+  .login-com-redes-sociais {
+    display: flex;
+    flex-direction: column;
+  }
+  /* FOOTER */
+  footer {
+    width: 375px;
+  }
+
+  #logo-white {
+    height: 29.57px;
+    width: 170px;
+  }
+  .imagens-redes-footer {
+    height: 20px;
+
+    width: fit-content;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  .container-geral-footer {
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: #52ca76;
+  }
+  .logo-lorem-e-redes {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .footer-informacoes {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .footer-categorias {
+    width: fit-content;
+  }
+  .footer-contatos {
+    width: 233px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-endereco-telefone {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-contatos p {
+    line-height: 20px;
+  }
+
+  .footer-assinatura {
+    width: 90%;
+    font-size: 8px;
+    font: weight 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
 }
