@@ -4,9 +4,13 @@
     height: 35px;
   }
   .input-menu {
-    width: 500px;
-    height: 50px;
+    width: 400px;
+    height: 40px;
     border-radius: 8px;
+  }
+
+  .lupa {
+    font-size: 1rem;
   }
 
   .item-card {
@@ -20,7 +24,6 @@
 
   .container-txt-oferta .txt-especial-oferta {
     font-size: 2.5rem;
-
     line-height: 3rem;
   }
   .img-tenis-oferta {
@@ -28,8 +31,21 @@
   }
 }
 
+@media (max-width: 1087px) {
+  .container-txt h1 {
+    width: 33rem;
+    font-size: 3.5rem;
+    letter-spacing: 4px;
+    line-height: 4rem;
+  }
+  /* Footer----------------- */
+  .logo-lorem-e-redes {
+    width: 20%;
+    padding-right: 0;
+  }
+}
+
 @media (max-width: 1075px) {
-  
   .cadastrar,
   .div-logo a button {
     display: none;
@@ -42,12 +58,7 @@
   .div-nav nav {
     display: none;
   }
-  .container-input .lupa {
-    position: relative;
-    top: 0.2rem;
-    right: -1rem;
-    padding: 0 2%;
-  }
+
   .item-card {
     min-width: 350px;
     height: auto;
@@ -57,13 +68,6 @@
   .div-logo {
     justify-content: space-between;
     gap: 1rem;
-    
-  }
-  .div-logo .logo {
-    width: 116px;
-    height: 24px;
-    top: 10%;
-    left: 25%;
   }
 }
 
@@ -72,6 +76,50 @@
     width: 193px;
     height: 35px;
   }
+}
+
+@media (max-width: 1020px) {
+  section .div-box-incio {
+    flex-direction: column-reverse;
+    height: auto;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+
+  .img-tenis-inicio {
+    width: 70%;
+    margin: 0 auto;
+    
+  }
+  .img-secion-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-ornamento {
+    display: none;
+  }
+
+  .container-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+ 
+
+  .logo-lorem-e-redes #lorem {
+    width: 130%;
+  }
+
+  .footer-inf-categ {
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 790px) {
   .input-menu {
     display: none;
   }
