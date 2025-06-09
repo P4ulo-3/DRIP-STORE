@@ -31,6 +31,7 @@
 body{
   background-color: #F9F8FE;
   overflow-x: hidden;
+  
 }
 .interface {
   max-width: 1440px;
@@ -49,6 +50,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
 }
 
 .container-menu {
@@ -406,7 +408,7 @@ p.parag-2 {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1rem;
   
 } 
 
@@ -546,7 +548,7 @@ p.parag-2 {
 .container-txt-oferta .parag-oferta {
   line-height: 28px;
   font-size: 1rem;
-  letter-spacing: 0.75;
+  letter-spacing: 0.75px;
   font-weight: 400;
   color: var(--darkGray2);
 }
