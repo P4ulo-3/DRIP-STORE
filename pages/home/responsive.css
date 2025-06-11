@@ -46,6 +46,13 @@
 }
 
 @media (max-width: 1075px) {
+  .box-nav-mobile {
+    /* display: block; */
+  }
+
+  .img-ornamento {
+    display: none;
+  }
   .cadastrar,
   .div-logo a button {
     display: none;
@@ -68,6 +75,7 @@
   .div-logo {
     justify-content: space-between;
     gap: 1rem;
+    padding: 0 1rem;
   }
 }
 
@@ -188,14 +196,6 @@
     width: 100%;
     height: auto;
   }
-
-  /* .box-cards-mais-destaques {
-    
-    flex-wrap: nowrap;
-    position: sticky;
-    overflow-x: auto;
-    
-  } */
 }
 
 @media (max-width: 667px) {
@@ -233,21 +233,76 @@
   }
 
   .item-card-produto .modelo-produto {
-    font-size: 0.8rem; /* Ajusta o tamanho do texto */
+    font-size: 0.8rem;
     letter-spacing: 0.5px;
-    white-space: nowrap; /* Impede que o texto quebre a linha */
+    white-space: nowrap;
     overflow: hidden; /* Esconde o texto que ultrapassar o limite */
     text-overflow: ellipsis; /* Adiciona reticências caso o texto seja muito longo */
   }
 
   .item-card-produto p.preco-novo,
   .item-card-produto p.preco-riscado {
-    font-size: 1rem; /* Ajusta o tamanho do preço */
+    font-size: 1rem;
     letter-spacing: 0.5px;
   }
 }
 @media (max-width: 610px) {
-  
+  /* Ativa o input Mobile------------ */
+  .box-input-mobile {
+    display: none;
+  }
+  .container-input-mobile {
+    position: relative;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .input-menu-mobile {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    font-weight: 400;
+    background-color: rgba(71, 71, 71, 0.1);
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    opacity: 60%;
+    border: none;
+  }
+  .lupa-mobile {
+    position: absolute;
+    right: 10%;
+    top: 27%;
+    cursor: pointer;
+    font-size: 1.3rem;
+    opacity: 60%;
+    color: var(--darkGray3);
+  }
+  /* Fim Ativa o input Mobile------------ */
+
+  .div-logo {
+    position: relative;
+  }
+  .div-logo .logo {
+    position: absolute;
+    left: 24%;
+    width: 175px;
+    height: 34px;
+  }
+  .lupa {
+    position: absolute;
+    font-size: 1.3rem;
+    right: -10rem;
+    top: -0.8rem;
+  }
+
+  .container-txt,
+  .container-txt a button,
+  .btn-oferta-inicio,
+  .container-txt h1 {
+    width: 100%;
+  }
 
   .container-cards-produto {
     display: grid;
@@ -290,10 +345,6 @@
 }
 
 @media (max-width: 540px) {
-  body{
-    overflow-x: hidden;
-  }
-
   .container-txt {
     padding: 0 4%;
   }
@@ -303,19 +354,18 @@
     letter-spacing: 0.75px;
   }
   .container-txt h1 {
-    width: 23rem;
-    font-size: 3rem;
-    letter-spacing: 0.75px;
-    line-height: 3.7rem;
+    width: 100%;
+    font-size: 2.8rem;
+    letter-spacing: 0.25px;
+    line-height: 3.5rem;
   }
   p.parag-2 {
     font-size: 0.9rem;
     font-weight: 400;
     letter-spacing: 0.25px;
     line-height: 22px;
-    padding: 0 6rem;
+    /* padding: 0 6rem; */
     width: 100%;
-    /* margin: 0 auto;  */
   }
 
   .img-tenis-inicio {
@@ -330,7 +380,6 @@
 
   .btn-oferta-inicio {
     width: 100%;
-    padding: 0 5%;
   }
 
   .div-box-oferta .container-txt-oferta {
@@ -341,9 +390,6 @@
   .container-txt-oferta .paragrafo-oferta-especial {
     color: var(--Warning);
     width: 100%;
-  }
-  .container-txt a button {
-    width: 75%;
   }
   p.paragrafo-oferta {
     color: var(--Primary);
