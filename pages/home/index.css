@@ -45,6 +45,11 @@ body {
   cursor: pointer;
   display: none;
 }
+
+header{
+  width: 100%;
+  background-color: var(--White1);
+}
 .div-logo {
   display: flex;
   justify-content: space-between;
