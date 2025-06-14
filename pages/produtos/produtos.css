@@ -25,9 +25,7 @@
   --primaryGCor2: #edabca;
   --SecondaryG: #b5b6f2;
   --secondaryGCor2: #efefff;
-  --Body-01: #F9F8FE;
 }
-
 
 /* Menu ------------------ */
 
@@ -132,18 +130,7 @@
 }
 /* Menu Fim---------------- */
 
-/* Section filter ---------- */
-
-.container-produtos-main{
-  max-width: 1440px;
-  background-color: red;
-  flex-direction: row;
-  display: flex;
-  width: 80%;
-  /* justify-content: space-between; */
-  align-items: flex-start;
-}
-
+/* 14. produtos */
 .produtos {
   display: flex;
   flex-direction: column;
@@ -154,6 +141,7 @@
   background-color: var(--Body-01);
 }
 
+/* 15. filtro */
 .filtro {
   max-width: 1440px;
   display: flex;
@@ -164,11 +152,81 @@
   padding: 2rem 0;
 }
 
-label {
-  font-weight: bold;
+/* 16. container-produtos-main */
+.container-produtos-main {
+  max-width: 1440px;
+  flex-direction: row;
+  display: flex;
+  width: 80%;
+  align-items: flex-start;
 }
 
-select {
+/* 17. asider-filtro */
+.asider-filtro {
+  
+  /* Adicione estilos se necessário */
+}
+
+/* 18. filtros */
+.filtros {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: start;
+  align-items: start;
+}
+
+/* 19. title-filter */
+.title-filter {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+/* 20. container-cards */
+.container-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%, auto;
+  background-color: var(--Body-01);
+  margin-top: 0px;
+  padding-left: 20px;
+}
+
+/* 21. card */
+.card {
+  position: relative;
+  width: 222px;
+  height: auto;
+  background-color: var(--Body-01);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 22. image-card */
+.image-card {
+  width: 222px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 6px 16px 30px 0px rgba(181, 182, 242, 0.3);
+}
+
+/* 23. desconto */
+.desconto {
+  position: absolute;
+}
+
+/* IDs */
+#sort {
+  /* select de ordenação */
   font-size: 16px;
   padding: 15px;
   border: 1px solid #ccc;
@@ -176,12 +234,21 @@ select {
   cursor: pointer;
 }
 
-
-/* Asider ----------------------- */
-.asider{
-  background-color: var(--White1);
-  width: 25%;
+/* IDs de filtros de marca, categoria, gênero, estado, etc. */
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: var(--Primary);
+  margin-right: 5px;
+  transform: scale(1.6);
 }
+
+input:checked + label,
+input[type="radio"]:checked + label {
+  font-weight: bold;
+  color: var(--Primary);
+}
+
+/* Formulário e fieldset */
 form {
   display: flex;
   flex-direction: column;
@@ -205,34 +272,16 @@ legend {
   font-weight: bold;
   margin-bottom: 15px;
 }
-.filtros {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  justify-content: start;
-  align-items: start;
-}
 
-div {
-  margin-bottom: 0px;
-}
-
+/* Labels e divs */
 label {
   font-weight: bold;
   display: block;
   margin-bottom: 1px;
 }
 
-input[type="checkbox"], input[type="radio"] {
-  accent-color: var(--Primary); /* Azul */
-  margin-right: 5px;
-  transform: scale(1.6);
-}
-
-.title-filter {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-top: 25px;
+div {
+  margin-bottom: 0px;
 }
 
 div div {
@@ -245,16 +294,6 @@ div div label {
   font-weight: normal;
 }
 
-input:checked + label {
-  font-weight: bold;
-  color: var(--Primary);
-}
-
-input[type="radio"]:checked + label {
-  font-weight: bold;
-  color: var(--Primary);
-}
-
 form div {
   padding-bottom: 1px;
 }
@@ -263,46 +302,17 @@ form div:last-child {
   border-bottom: none;
 }
 
-/* card ----------- */
-
-.container-cards {
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-justify-content: space-between;
-flex-wrap: wrap;
-width: 100%;
-height: 100%, auto;
-background-color: var(--Body-01);
-margin-top: 0px;
-padding-left: 20px;
-}
-.card {
-  position: relative;
-  width: 290px;
-  height: 437px;''
-  background-color: var(--Body-01);
+/* Botão entrar */
+.div-logo a button {
+  font-family: "inder", sans-serif;
+  background-color: var(--Primary);
+  color: var(--ligthGray3);
+  width: 7.5rem;
+  height: 2.5rem;
+  text-decoration: none;
+  border: none;
   border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  margin-top: 0px;
-}
-
-.image-card {
-  width: 292px;
-  height: 439px;
-  border-radius: 8px;
-  object-fit: cover;
-  margin-bottom: 20px;
-  box-shadow: 6px 16px 30px 0px rgba(181, 182, 242, 0.3);
-
-
-}
-
-.desconto {
-  position: absolute;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 700;
 }
