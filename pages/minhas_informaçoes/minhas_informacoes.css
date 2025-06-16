@@ -165,7 +165,6 @@ h4.titulo-nav-mobile {
   justify-content: start;
 }
 
-
 .div-nav-mobile nav ul {
   display: flex;
   flex-direction: column;
@@ -209,7 +208,6 @@ h4.titulo-nav-mobile {
   font-weight: 400;
   letter-spacing: 0.75px;
   color: var(--darkGray2);
-  
 }
 .div-nav-mobile .user-mobile {
   padding: 2rem 0;
@@ -276,15 +274,14 @@ section.container-minhas-informacoes-inicio {
   background-color: var(--ligthGray3);
   padding-top: 4.5rem;
   padding-bottom: 10rem;
-
 }
 
-.container-meus-pedidos {
+.container-minhas-informacoes {
   display: flex;
   gap: 1.5rem;
 }
 
-.box-links-pedidos {
+.box-links-informacoes {
   width: 20.8rem;
   height: 16.7rem;
   background-color: var(--White1);
@@ -296,8 +293,6 @@ section.container-minhas-informacoes-inicio {
   padding-top: 0.5rem;
 }
 
-
-
 .links-meus-pedidos-ativo a {
   text-decoration: none;
   color: var(--Primary);
@@ -305,7 +300,6 @@ section.container-minhas-informacoes-inicio {
   font-weight: 700;
   letter-spacing: 0.75px;
   padding-top: 1rem;
-  
 }
 .links-meus-pedidos-ativo {
   display: flex;
@@ -331,7 +325,6 @@ section.container-minhas-informacoes-inicio {
   font-weight: 700;
   letter-spacing: 0.75px;
   padding-top: 1rem;
-
 }
 .links-meus-pedidos p {
   color: var(--darkGray2);
@@ -339,104 +332,50 @@ section.container-minhas-informacoes-inicio {
   font-weight: 700;
   letter-spacing: 0.75px;
   padding-top: 1rem;
-
 }
 .link-meu-perfil {
   border: none;
 }
 
-.box-itens-meus-pedidos {
+.box-itens-minhas-informacoes {
   width: 55.6rem;
   height: auto;
   background-color: var(--White1);
   padding: 2rem;
   padding-top: 0rem;
 }
-.titulo-pedidos {
+.titulo-informacoes {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.6rem 0;
 }
-.titulo-pedidos h5{
+.titulo-pedidos h5 {
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.75px;
   color: var(--darkGray2);
-  
 }
 
-.titulo-pedidos p {
+.titulo-informacoes a {
   font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 0.25px;
-  color: var(--darkGray2);
+  color: var(--Primary);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
 }
-
-.divs-item-pedidos {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.2rem 0;
-  border-top: 1px solid var(--ligthGray2);
-
-}
-
-.img-texto-pedidos {
-  display: flex;
-  gap: 1rem;
-  
-}
-.txt-pedidos {
+.cards-minhas-informacoes {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
-  padding-top: 0.3rem;
+  gap: 2rem;
 }
-.img-texto-pedidos .txt-pedidos p {
-  color: var(--ligthGray);
-  font-size: 0.6rem;
-  font-weight: 500;
-  letter-spacing: 1px;
-}
-.img-texto-pedidos .txt-pedidos h4 {
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: var(--darkGray);
-  letter-spacing: 0.75px;
-}
-.status-txt {
+.txt-info {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  
+  gap: 1rem;
 }
-.status-mobile {
-  display: none;
-  font-size: 0.8rem;
-  font-weight: 500;
-  letter-spacing: 0.25px;
-  color: var(--darkGray2);
 
-}
-.divs-item-pedidos .status-pedido {
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: var(--Warning);
-  letter-spacing: 0.75px;
-}
-.divs-item-pedidos .status-finalizado {
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: var(--ligthGray);
-  letter-spacing: 0.75px;
-}
-.divs-item-pedidos .status-cancelado{
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: var(--Primary);
-  letter-spacing: 0.75px;
-}
 /* Fim Section inicio------------------------------ */
 
 /* FOOTER---------------------------------- */
