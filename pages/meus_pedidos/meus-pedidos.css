@@ -46,7 +46,7 @@ body {
   display: none;
 }
 
-header{
+header {
   width: 100%;
   background-color: var(--White1);
 }
@@ -74,8 +74,9 @@ header{
   background-color: rgba(71, 71, 71, 0.1);
   font-size: 1.1rem;
   padding-left: 1rem;
-  opacity: 60%;
+  /* opacity: 60%; */
   border: none;
+  color: var(--darkGray);
 }
 
 .container-input {
@@ -130,13 +131,10 @@ header{
 .div-nav nav ul li a {
   text-decoration: none;
   font-weight: 500;
-  
 }
 
 .div-nav nav ul li .n-ativa {
   color: var(--darkGray2);
-  
-  
 }
 
 .div-nav nav ul li .ativa {
@@ -144,10 +142,10 @@ header{
   font-weight: 600;
   border-bottom: 2px solid var(--Primary);
 }
-.box-nav-mobile{
+.box-nav-mobile {
   display: none;
 }
-h4.titulo-nav-mobile{
+h4.titulo-nav-mobile {
   color: var(--darkGray2);
   font-size: 1rem;
   letter-spacing: 0.75px;
@@ -164,32 +162,16 @@ h4.titulo-nav-mobile{
   margin-top: 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
 }
 
-.div-nav-mobile .menu-mobile-btn a button {
-  background-color: var(--Primary);
-  color: var(--ligthGray3);
-  width: 100%;
-  height: 2.5rem;
-  text-decoration: none;
-  border: none;
-  border-radius: 8px;
-  font-size: 0.9rem;
-  cursor: pointer;
-  font-weight: 700;
-  
-   
-  
-}
 
 .div-nav-mobile nav ul {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   list-style: none;
-  
 }
 
 .div-nav-mobile nav ul li a {
@@ -197,13 +179,10 @@ h4.titulo-nav-mobile{
   font-weight: 400;
   font-size: 1rem;
   letter-spacing: 0.75px;
- 
-  
 }
 
 .div-nav-mobile nav ul li .n-ativa-mobile {
   color: var(--darkGray2);
-   
 }
 
 .div-nav-mobile nav ul li .ativa-mobile {
@@ -211,12 +190,38 @@ h4.titulo-nav-mobile{
   font-weight: 600;
   border-bottom: 2px solid var(--Primary);
 }
-
-.div-nav-mobile nav {
-  padding: 3rem 0;
+.user-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-bottom: 1px solid var(--ligthGray2);
+}
+.user-mobile h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  color: var(--darkGray2);
+  margin-bottom: 0.4rem;
+}
+.user-mobile a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.75px;
+  color: var(--darkGray2);
+  
+}
+.div-nav-mobile .user-mobile {
+  padding: 2rem 0;
   width: 70%;
   margin: 0 auto;
-  
+  padding-top: 3rem;
+}
+
+.div-nav-mobile nav {
+  padding: 2rem 0;
+  width: 70%;
+  margin: 0 auto;
 }
 .menu-mobile-btn {
   display: flex;
@@ -230,27 +235,19 @@ h4.titulo-nav-mobile{
   width: 70%;
   margin: 0 auto;
   margin-bottom: 1rem;
-  
-  
-  
-  
 }
 .menu-mobile-btn a {
   width: 100%;
-
- 
 }
 
 .cadastrar-mobile {
   text-decoration-thickness: 1px;
-  text-decoration-color: var(--darkGray2) ;
+  text-decoration-color: var(--darkGray2);
   text-underline-offset: 3px;
   color: var(--darkGray2);
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.75px;
-  
-  
 }
 .box-logo-input {
   display: flex;
@@ -259,16 +256,16 @@ h4.titulo-nav-mobile{
 }
 
 .box-car-and-usuario {
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    gap: 2.5rem;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 2.5rem;
 }
 
 .usuario {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 /* Menu Fim---------------- */
@@ -277,105 +274,170 @@ h4.titulo-nav-mobile{
 
 section.container-meus-pedidos-inicio {
   background-color: var(--ligthGray3);
+  padding-top: 4.5rem;
+  padding-bottom: 10rem;
+
 }
 
-section .div-box-incio {
+.container-meus-pedidos {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 70vh;
-  position: relative;
+  gap: 1.5rem;
 }
 
-.container-txt {
+.box-links-pedidos {
+  width: 20.8rem;
+  height: 16.7rem;
+  background-color: var(--White1);
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  margin-bottom: 4.3rem;
-  width: 35rem;
+  /* justify-content: center; */
+  gap: 1.3rem;
+  padding: 2rem;
+  padding-top: 0.5rem;
 }
 
-p.paragrafo-oferta {
-  font-size: 1rem;
+
+
+.links-meus-pedidos-ativo a {
+  text-decoration: none;
+  color: var(--Primary);
+  font-size: 0.8rem;
   font-weight: 700;
-  color: var(--Warning);
-  letter-spacing: 2px;
-}
-
-.container-txt h1 {
-  width: 33rem;
-  color: var(--darkGray);
-  font-size: 4rem;
-  color: black;
-  text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
-  letter-spacing: 1px;
-  line-height: 4.5rem;
-}
-
-p.parag-2 {
-  font-size: 1.1rem;
-  font-weight: 400;
-  font-family: "inder", sans-serif;
   letter-spacing: 0.75px;
-  line-height: 34px;
+  padding-top: 1rem;
+  
+}
+.links-meus-pedidos-ativo {
+  display: flex;
+  width: 100%;
+  border-top: 1px solid var(--ligthGray2);
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+}
+.links-meus-pedidos {
+  display: flex;
+  width: 100%;
+  border-top: 1px solid var(--ligthGray2);
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.links-meus-pedidos a {
+  text-decoration: none;
+  color: var(--darkGray2);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  padding-top: 1rem;
+
+}
+.links-meus-pedidos p {
+  color: var(--darkGray2);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  padding-top: 1rem;
+
+}
+.link-meu-perfil {
+  border: none;
+}
+
+.box-itens-meus-pedidos {
+  width: 55.6rem;
+  height: auto;
+  background-color: var(--White1);
+  padding: 2rem;
+  padding-top: 0rem;
+}
+.titulo-pedidos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 0;
+}
+.titulo-pedidos h5{
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  color: var(--darkGray2);
+  
+}
+
+.titulo-pedidos p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.25px;
   color: var(--darkGray2);
 }
 
-.container-txt a button {
-  background-color: var(--Primary);
-  color: var(--ligthGray3);
-  width: 13rem;
-  height: 3rem;
-  text-decoration: none;
-  border: none;
-  border-radius: 8px;
-  font-size: 0.9rem;
-  cursor: pointer;
-  font-weight: 700;
-  margin-top: 1.5rem;
-}
-
-.img-tenis-inicio {
-  margin-right: 5.5rem;
-  width: 90%;
-  height: auto;
-  min-width: 400px;
-}
-
-.img-ornamento {
-  position: absolute;
-  right: -4rem;
-  top: 8rem;
-}
-
-.div-bolinha-slide {
+.divs-item-pedidos {
   display: flex;
-  justify-content: center;
-  gap: 0.4rem;
-  /* padding-bottom: 2rem; */
-  height: 6rem;
-  margin-bottom: 4rem;
-}
-.bolinha-ativo {
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  background-color: var(--Primary);
-  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0;
+  border-top: 1px solid var(--ligthGray2);
+
 }
 
-.bolinha2,
-.bolinha3,
-.bolinha4 {
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  background-color: var(--ligthGray2);
-  cursor: pointer;
+.img-texto-pedidos {
+  display: flex;
+  gap: 1rem;
+  
 }
+.txt-pedidos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding-top: 0.3rem;
+}
+.img-texto-pedidos .txt-pedidos p {
+  color: var(--ligthGray);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.img-texto-pedidos .txt-pedidos h4 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--darkGray);
+  letter-spacing: 0.75px;
+}
+.status-txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.status-mobile {
+  display: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  color: var(--darkGray2);
 
+}
+.divs-item-pedidos .status-pedido {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--Warning);
+  letter-spacing: 0.75px;
+}
+.divs-item-pedidos .status-finalizado {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--ligthGray);
+  letter-spacing: 0.75px;
+}
+.divs-item-pedidos .status-cancelado{
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--Primary);
+  letter-spacing: 0.75px;
+}
 /* Fim Section inicio------------------------------ */
-
 
 /* FOOTER---------------------------------- */
 footer {

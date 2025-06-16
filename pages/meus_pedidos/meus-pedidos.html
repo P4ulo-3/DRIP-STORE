@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="variaveis.css" />
     <link rel="stylesheet" href="meus-pedidos.css" />
+    <link rel="stylesheet" href="responsividade-pedidos.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,7 +34,7 @@
                 <input
                   class="input-menu"
                   type="text"
-                  placeholder="Pesquisar produto..."
+                  placeholder="Tênis"
                 />
 
                 <i class="bi bi-search lupa"></i>
@@ -75,6 +76,11 @@
           </div>
           <div class="box-nav-mobile">
             <div class="div-nav-mobile">
+              <div class="user-mobile">
+                <h5>Olá Francisco</h5>
+                <a href="#">Minha informações</a>
+                <a href="#">Métodos de pagamento</a>
+              </div>
               <nav>
                 <h4 class="titulo-nav-mobile">Paginas</h4>
                 <ul>
@@ -84,12 +90,7 @@
                   <li><a class="ativa-mobile" href="#">Meus Pedidos</a></li>
                 </ul>
               </nav>
-              <div class="menu-mobile-btn">
-                <a class="cadastrar-mobile" href="#">Cadastre-se</a>
-                <a href="#">
-                  <button>Entrar</button>
-                </a>
-              </div>
+             
             </div>
           </div>
         </section>
@@ -97,37 +98,95 @@
     </header>
     <!--Fim Menu--------------------------------- -->
 
-    <!-- Section inicio------------------------------ -->
+    <!-- Section Meus pedidos------------------------------ -->
     <section class="container-meus-pedidos-inicio">
       <div class="interface">
-        <div class="div-box-incio">
-          <div class="container-txt">
-            <p class="paragrafo-oferta">Melhores ofertas personalizadas</p>
-            <h1>Queima de estoque Nike🔥</h1>
-            <p class="parag-2">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Doloribus molestias, pariatur iusto itaque.
-            </p>
-            <div class="btn-oferta-inicio">
-              <a href="#">
-                <button>Ver Ofertas</button>
-              </a>
+        <div class="container-meus-pedidos">
+          <div class="box-links-pedidos">
+            <div class="links-meus-pedidos link-meu-perfil">
+              <p href="#">Meu perfil</p>
+            </div>
+            <div class="links-meus-pedidos-ativo">
+              <a href="#">Meus pedidos</a>
+            </div>
+            <div class="links-meus-pedidos">
+              <a href="#">Minhas informações</a>
+            </div>
+            <div class="links-meus-pedidos">
+              <a href="#">Métodos de pagamento</a>
             </div>
           </div>
-          <div class="img-secion-one">
-            <img class="img-ornamento" src="./imgs/Ornament 11.png" alt="" />
-            <img
-              class="img-tenis-inicio"
-              src="./imgs/White-Sneakers-PNG-Clipart 1.png"
-              alt="Tênis Air"
-            />
+          <div class="box-itens-meus-pedidos">
+            <div class="titulo-pedidos">
+              <h5>Meus pedidos</h5>
+              <p>STATUS</p>
+            </div>
+            <div class="divs-item-pedidos">
+              <div class="img-texto-pedidos">
+                <img src="../../imgs/Tenis-m-pedidos.png" alt="Tenis" />
+                <div class="txt-pedidos">
+                  <p>Pedido n 2234981932</p>
+                  <h4>Tênis Nike Revolution 6 Next Nature Masculino</h4>
+                </div>
+              </div>
+              <div class="status-txt">
+                <p class="status-mobile">STATUS</p>
+                <p class="status-pedido">Produto em trãnsito</p>
+              </div>
+            </div>
+            <div class="divs-item-pedidos">
+              <div class="img-texto-pedidos">
+                <img src="../../imgs/Tenis-m-pedidos.png" alt="Tenis" />
+                <div class="txt-pedidos">
+                  <p>Pedido n 4495810492</p>
+                  <h4>Tênis Nike Revolution 6 Next Nature Masculino</h4>
+                </div>
+              </div>
+              <div class="status-txt">
+                <p class="status-mobile">STATUS</p>
+                <p class="status-finalizado">Finalizado</p>
+              </div>
+            </div>
+            <div class="divs-item-pedidos">
+              <div class="img-texto-pedidos">
+                <img src="../../imgs/Tenis-m-pedidos.png" alt="Tenis" />
+                <div class="txt-pedidos">
+                  <p>Pedido n 4495810492</p>
+                  <h4>Tênis Nike Revolution 6 Next Nature Masculino</h4>
+                </div>
+              </div>
+              <div class="status-txt">
+                <p class="status-mobile">STATUS</p>
+                <p class="status-cancelado">Cancelado</p>
+              </div>
+            </div>
+            <div class="divs-item-pedidos">
+              <div class="img-texto-pedidos">
+                <img src="../../imgs/Tenis-m-pedidos.png" alt="Tenis" />
+                <div class="txt-pedidos">
+                  <p>Pedido n 4495810492</p>
+                  <h4>Tênis Nike Revolution 6 Next Nature Masculino</h4>
+                </div>
+              </div>
+              <div class="status-txt">
+                <p class="status-mobile">STATUS</p>
+                <p class="status-finalizado">Finalizado</p>
+              </div>
+            </div>
+            <div class="divs-item-pedidos">
+              <div class="img-texto-pedidos">
+                <img src="../../imgs/Tenis-m-pedidos.png" alt="Tenis" />
+                <div class="txt-pedidos">
+                  <p>Pedido n 4495810492</p>
+                  <h4>Tênis Nike Revolution 6 Next Nature Masculino</h4>
+                </div>
+              </div>
+              <div class="status-txt">
+                <p class="status-mobile">STATUS</p>
+                <p class="status-finalizado">Finalizado</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="div-bolinha-slide">
-          <div class="bolinha-ativo"></div>
-          <div class="bolinha2"></div>
-          <div class="bolinha3"></div>
-          <div class="bolinha4"></div>
         </div>
       </div>
     </section>
