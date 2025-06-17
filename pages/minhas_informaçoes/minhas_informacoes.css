@@ -273,7 +273,7 @@ h4.titulo-nav-mobile {
 section.container-minhas-informacoes-inicio {
   background-color: var(--ligthGray3);
   padding-top: 4.5rem;
-  padding-bottom: 10rem;
+  padding-bottom: 13rem;
 }
 
 .container-minhas-informacoes {
@@ -368,12 +368,38 @@ section.container-minhas-informacoes-inicio {
 .cards-minhas-informacoes {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
+}
+.box-info-pessoais {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  border-top: 1px solid var(--ligthGray2);
+  padding-top: 1rem;
+}
+.box-info-Entregas {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  border-top: 1px solid var(--ligthGray2);
+  padding-top: 1rem;
 }
 .txt-info {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+.txt-info p {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--ligthGray);
+  letter-spacing: 0.25px;
+}
+.txt-info h6 {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--darkGray);
+  letter-spacing: 0.25px;
 }
 
 /* Fim Section inicio------------------------------ */
