@@ -261,6 +261,7 @@ section.container-minhas-informacoes-inicio {
   background-color: var(--ligthGray3);
   padding-top: 4.5rem;
   padding-bottom: 13rem;
+  
 }
 
 .container-minhas-informacoes {
@@ -269,6 +270,7 @@ section.container-minhas-informacoes-inicio {
   background-color: var(--ligthGray3);
   flex-direction: column;
   align-items: center;
+  
 }
 
 .box-links-informacoes {
@@ -281,51 +283,10 @@ section.container-minhas-informacoes-inicio {
   gap: 1.3rem;
   padding: 2rem;
   padding-top: 0.5rem;
+  
+  
 }
 
-.links-meus-pedidos-ativo a {
-  text-decoration: none;
-  color: var(--Primary);
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.75px;
-  padding-top: 1rem;
-}
-.links-meus-pedidos-ativo {
-  display: flex;
-  width: 100%;
-  border-top: 1px solid var(--ligthGray2);
-  align-items: center;
-  height: 100%;
-  margin: 0 auto;
-}
-.links-meus-pedidos {
-  display: flex;
-  width: 100%;
-  border-top: 1px solid var(--ligthGray2);
-  align-items: center;
-  height: 100%;
-  margin: 0 auto;
-}
-
-.links-meus-pedidos a {
-  text-decoration: none;
-  color: var(--darkGray2);
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.75px;
-  padding-top: 1rem;
-}
-.links-meus-pedidos p {
-  color: var(--darkGray2);
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.75px;
-  padding-top: 1rem;
-}
-.link-meu-perfil {
-  border: none;
-}
 
 .box-itens-minhas-informacoes {
   width: 52.3rem;

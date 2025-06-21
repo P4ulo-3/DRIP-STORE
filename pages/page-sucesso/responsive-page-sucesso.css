@@ -1,0 +1,251 @@
+@media (max-width: 1180px) {
+  .div-logo .logo {
+    width: 210px;
+    height: 35px;
+  }
+  .input-menu {
+    width: 400px;
+    height: 40px;
+    border-radius: 8px;
+  }
+
+  .lupa {
+    font-size: 1rem;
+  }
+
+  .item-card {
+    width: 32%;
+    height: auto;
+    padding: 1rem 0;
+  }
+  .box-cards-mais-destaques {
+    gap: 3rem;
+  }
+
+  .container-txt-oferta .txt-especial-oferta {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .img-tenis-oferta {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1087px) {
+  .container-txt h1 {
+    width: 33rem;
+    font-size: 3.5rem;
+    letter-spacing: 4px;
+    line-height: 4rem;
+  }
+  /* Footer----------------- */
+  .logo-lorem-e-redes {
+    width: 20%;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 1075px) {
+  /* Ativa o menu mobile------------ */
+  /* .box-nav-mobile {
+    display: block;
+  } */
+  /* Ativa o menu mobile------------ */
+  .box-itens-minhas-informacoes {
+    width: 100%;
+  }
+
+  .img-ornamento {
+    display: none;
+  }
+  .cadastrar,
+  .div-logo a button {
+    display: none;
+  }
+
+  .menu-hamburger {
+    display: block;
+  }
+
+  .div-nav nav {
+    display: none;
+  }
+
+  .item-card {
+    min-width: 350px;
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .div-logo {
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 1030px) {
+  .div-logo .logo {
+    width: 193px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .container-geral-footer {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .logo-lorem-e-redes {
+    text-align: start;
+    width: 70%;
+    height: auto;
+    margin-bottom: 0rem;
+    padding-right: 0rem;
+  }
+
+  .footer-inf-categ {
+    justify-content: start;
+    width: 70%;
+  }
+
+  .footer-informacoes {
+    margin-top: 0;
+    height: auto;
+  }
+
+  .footer-informacoes nav ul a {
+    line-height: 2rem;
+  }
+
+  .footer-categorias nav ul a {
+    line-height: 2rem;
+  }
+
+  .footer-categorias {
+    padding-bottom: 2rem;
+    height: auto;
+  }
+
+  .footer-inf-categ {
+    gap: 5rem;
+  }
+
+  .footer-contatos {
+    width: 70%;
+    margin-bottom: 1rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 988px) {
+}
+
+@media (max-width: 775px) {
+  .titulo-informacoes h1 {
+    width: 100%;
+    font-size: 1.9rem;
+    line-height: 38px;
+  }
+  .btn-voltar {
+    width: 100%;
+    margin: 0 auto;
+
+    text-align: center;
+  }
+
+  .input-menu {
+    width: auto;
+  }
+}
+
+@media (max-width: 667px) {
+}
+@media (max-width: 610px) {
+  /* Ativa o input Mobile------------ */
+  .box-input-mobile {
+    display: none;
+  }
+  .container-input-mobile {
+    position: relative;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .input-menu-mobile {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    font-weight: 400;
+    background-color: rgba(71, 71, 71, 0.1);
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    opacity: 60%;
+    border: none;
+  }
+  .lupa-mobile {
+    position: absolute;
+    right: 10%;
+    top: 27%;
+    cursor: pointer;
+    font-size: 1.3rem;
+    opacity: 60%;
+    color: var(--darkGray3);
+  }
+  /* Fim Ativa o input Mobile------------ */
+
+  .div-logo {
+    position: relative;
+  }
+  .div-logo .logo {
+    position: absolute;
+    left: 24%;
+    width: 175px;
+    height: 34px;
+  }
+  .lupa {
+    position: absolute;
+    font-size: 1.3rem;
+    right: -10rem;
+    top: -0.8rem;
+  }
+
+  .input-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .container-geral-footer {
+    align-items: start;
+    padding: 2.5rem 1rem;
+    width: 100%;
+  }
+
+  .logo-lorem-e-redes {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    padding-right: 0;
+  }
+
+  .footer-inf-categ {
+    justify-content: start;
+    align-items: start;
+    gap: 0rem;
+    width: 90%;
+  }
+  .footer-informacoes {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-contatos {
+    width: 100%;
+    margin-bottom: 0.2rem;
+    height: 11.9rem;
+  }
+}
