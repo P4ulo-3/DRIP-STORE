@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="variaveis.css" />
+    <link rel="stylesheet" href="confirmacao-compra.css" />
+    <link rel="stylesheet" href="response.confirmacao-compra.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <title>Drip-Store Pagina-Sucesso</title>
+  </head>
+  <body>
+    <!-- Menu------------------------ -->
+    <header>
+      <div class="interface">
+        <section class="container-menu">
+          <div class="div-logo">
+            <div class="menu-hamburger">
+              <i class="bi bi-list"></i>
+            </div>
+            <img class="logo" src="../../imgs/logo.png" alt="Digital Store" />
+            <div class="container-input">
+              <input
+                class="input-menu"
+                type="text"
+                placeholder="Pesquisar produto..."
+              />
+
+              <i class="bi bi-search lupa"></i>
+            </div>
+            <a class="cadastrar" href="#">Cadastre-se</a>
+            <a href="#">
+              <button>Entrar</button>
+            </a>
+            <div class="buy">
+              <img class="carrinho" src="../../imgs/Buy.png" alt="" />
+              <div class="quant-car">2</div>
+            </div>
+          </div>
+          <div class="box-input-mobile">
+            <div class="container-input-mobile">
+              <input
+                class="input-menu-mobile"
+                type="text"
+                placeholder="Pesquisar produto..."
+              />
+
+              <i class="bi bi-search lupa-mobile"></i>
+            </div>
+          </div>
+
+          <div class="div-nav">
+            <nav>
+              <ul>
+                <li><a class="n-ativa" href="#">Home</a></li>
+                <li><a class="ativa" href="#">Produtos</a></li>
+                <li><a class="n-ativa" href="#">Categorias</a></li>
+                <li><a class="n-ativa" href="#">Meus Pedidos</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="box-nav-mobile">
+            <div class="div-nav-mobile">
+              <nav>
+                <h4 class="titulo-nav-mobile">Paginas</h4>
+                <ul>
+                  <li><a class="ativa-mobile" href="#">Home</a></li>
+                  <li><a class="n-ativa-mobile" href="#">Produtos</a></li>
+                  <li><a class="n-ativa-mobile" href="#">Categorias</a></li>
+                  <li><a class="n-ativa-mobile" href="#">Meus Pedidos</a></li>
+                </ul>
+              </nav>
+              <div class="menu-mobile-btn">
+                <a class="cadastrar-mobile" href="#">Cadastre-se</a>
+                <a href="#">
+                  <button>Entrar</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+    <!--Fim Menu--------------------------------- -->
+
+    <!-- Section inicio------------------------------ -->
+    <section class="container-confimacao-compra-inicio">
+      <div class="interface">
+        <div class="container-form-comfirmacao">
+          <h1>Finalizar Compra</h1>
+          <div>
+            <div class="box-form">
+              <div class="div-form-compra">
+                <h4>Infomações Pessoais</h4>
+                <form>
+                  <div class="txt-input">
+                    <label for="nome">Nome Completo *</label>
+                    <input
+                      type="text"
+                      name="nome"
+                      placeholder="Insira seu nome"
+                    />
+                  </div>
+                  <div class="txt-input">
+                    <label for="cpf">CPF *</label>
+                    <input
+                      type="number"
+                      name="cpf"
+                      placeholder="Insira seu CPF"
+                    />
+                  </div>
+                  <div class="txt-input">
+                    <label for="nome">E-mail *</label>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Insira seu email"
+                    />
+                  </div>
+                  <div class="txt-input">
+                    <label for="celular">Celular *</label>
+                    <input
+                      type="number"
+                      name="number"
+                      placeholder="Insira seu celular"
+                    />
+                  </div>
+                </form>
+              </div>
+              <div class="div-form-compra">
+                <h4>Infomações de Entrega</h4>
+                <form>
+                  <div class="txt-input">
+                    <label for="nome">Endereço *</label>
+                    <input
+                      type="text"
+                      name="endereco"
+                      placeholder="Insira seu endereço"
+                    />
+                  </div>
+                  <div class="txt-input">
+                    <label for="cpf">Bairro *</label>
+                    <input
+                      type="text"
+                      name="bairro"
+                      placeholder="Insira seu bairro"
+                    />
+                  </div>
+                  <div class="txt-input">
+                    <label for="cidade">Cidade *</label>
+                    <input
+                      type="text"
+                      name="cidade"
+                      placeholder="Insira sua cidade"
+                    />
+                  </div>
+                  <div class="txt-input">
+                    <label for="cep">CEP *</label>
+                    <input
+                      type="number"
+                      name="cep"
+                      placeholder="Insira seu CEP"
+                    />
+                  </div>
+                   <div class="txt-input">
+                    <label for="complemento">Complemento *</label>
+                    <input
+                      type="text"
+                      name="complemento"
+                      placeholder="Insira complemento"
+                    />
+                  </div>
+                </form>
+              </div>
+
+            </div>
+            <div class="div-resumo-compra"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Fim Section inicio-------------------------- -->
+
+    <!-- FOOTER----------------------------------------- -->
+    <footer>
+      <div class="interface">
+        <div class="container-geral-footer">
+          <div class="logo-lorem-e-redes">
+            <img
+              src="../../imgs/logo (1).png"
+              alt="logo-white"
+              id="logo-white"
+            />
+            <p id="lorem">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore.
+            </p>
+            <div class="imagens-redes-footer">
+              <a href="#"
+                ><img src="../../imgs/facebook.png" alt="fcbk-white"
+              /></a>
+              <a href="#"
+                ><img src="../../imgs/instagram.png" alt="instagram-white"
+              /></a>
+              <a href="#"
+                ><img src="../../imgs/twitter.png" alt="twitter-white"
+              /></a>
+            </div>
+          </div>
+          <div class="footer-inf-categ">
+            <div class="footer-informacoes">
+              <h3>Informação</h3>
+              <nav>
+                <ul>
+                  <li><a href="#">Sobre Drip Store</a></li>
+                  <li><a href="#">Segurança</a></li>
+                  <li><a href="#">Wishlist </a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Trabalhe conosco</a></li>
+                  <li><a href="#">Meus Pedidos </a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer-categorias">
+              <h3>Categorias</h3>
+              <nav>
+                <ul>
+                  <li><a href="#">Camisetas</a></li>
+                  <li><a href="#">Calças</a></li>
+                  <li><a href="#">Bonés</a></li>
+                  <li><a href="#">Headphones</a></li>
+                  <li><a href="#">Tênis</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="footer-contatos">
+            <h3>Contatos</h3>
+            <div class="footer-endereco-telefone">
+              <p>
+                Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE,
+                60150-161
+              </p>
+              <p>(85) 3051-3411</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-assinatura">
+          <p>@ 2022 Digital College</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
