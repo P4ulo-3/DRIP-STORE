@@ -262,8 +262,13 @@ section.container-confimacao-compra-inicio {
   padding-top: 4.5rem;
   padding-bottom: 13rem;
 }
+.container-form-resumo {
+  display: flex;
+  gap: 2rem;
+}
 .box-form {
   margin-top: 1.5rem;
+  width: 100%;
 }
 .container-form-comfirmacao h1 {
   font-size: 2rem;
@@ -273,7 +278,7 @@ section.container-confimacao-compra-inicio {
 }
 .div-form-compra {
   background-color: var(--White1);
-  width: 60%;
+  width: 100%;
   padding: 1.5rem;
   height: auto;
   margin-top: 0.7rem;
@@ -306,6 +311,217 @@ section.container-confimacao-compra-inicio {
   font-weight: 400;
   letter-spacing: 0.75px;
 }
+.box-input-radio {
+  margin-top: 1rem;
+}
+.box-input-radio label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  color: var(--darkGray2);
+}
+.radio-pagamento p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  color: var(--darkGray2);
+}
+.divs-radio {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin: 1rem 0;
+  margin-top: 1.7rem;
+}
+.radio-pagamento {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.radio-pagamento input[type="radio"] {
+  width: 1.3rem;
+  height: 1.3rem;
+  cursor: pointer;
+  border: 2px solid var(--darkGray3);
+  border-radius: 50%;
+  background-color: transparent;
+  appearance: none;
+  position: relative;
+}
+.radio-pagamento input[type="radio"]:checked:before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  width: 0.6rem;
+  height: 0.6rem;
+  position: absolute;
+  top: 1.9px;
+  right: 1.6px;
+  background-color: var(--Primary);
+  border: 2px solid var(--Primary);
+}
+.radio-pagamento input[type="radio"]:checked {
+  border: 2px solid var(--Primary);
+}
+.div-cartao-num {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.div-cartao-num .txt-input {
+  width: 100%;
+}
+.div-cartao-num .txt-input input {
+  width: 100%;
+}
+input.cod-cartao {
+  width: 48%;
+}
+.div-resumo-compra {
+  width: 70%;
+  padding-top: 2.2rem;
+  /* height: 33.2rem; */
+}
+.box-resumo {
+  background-color: var(--White1);
+  height: auto;
+  padding: 1.5rem;
+}
+.box-resumo h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  color: var(--darkGray2);
+}
+.card-txt-resumo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.img-txt-resumo .card-txt-resumo h6,
+.img-txt-resumo .card-txt-resumo p {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  color: var(--darkGray);
+}
+.img-txt-resumo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  padding: 1.1rem 0;
+  border-top: 1px solid var(--ligthGray2);
+  border-bottom: 1px solid var(--ligthGray2);
+}
+
+.container-sub-fre-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sub-fre-desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sub-fre-desc p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  color: var(--ligthGray);
+}
+.sub-fre-desc h3 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  color: var(--darkGray);
+}
+
+.valor-total-resumo {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  background-color: rgba(246, 170, 28, 0.1);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+.valor-total-final {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin: 1.5rem 0;
+}
+
+.total-preco,
+.total-preco-final {
+  text-align: end;
+}
+.valor-total-resumo div h2,
+.valor-total-final div h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0.75px;
+}
+.total-preco p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--ligthGray);
+}
+
+.btn-voltar {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.btn-voltar a button,
+.btn-pagamento-final a button {
+  width: 100%;
+  background-color: var(--Warning);
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  color: var(--ligthGray3);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  cursor: pointer;
+  
+}
+.div-form-preco-final {
+  background-color: var(--White1);
+  width: 57.5%;
+  padding: 1.5rem;
+  height: auto;
+  margin-top: 0.7rem;
+}
+.div-form-preco-final form {
+  border-top: 1px solid var(--ligthGray2);
+  margin-top: 1rem;
+}
+.valor-total-final .total-preco-final h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0.75px;
+  color: var(--Error);
+}
+.valor-total-final .total-preco-final p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--ligthGray);
+}
+.valor-total-final .txt-final h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  color: var(--darkGray);
+}
+
 /* Fim Section inicio------------------------------ */
 
 /* FOOTER---------------------------------- */

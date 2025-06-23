@@ -97,7 +97,7 @@
       <div class="interface">
         <div class="container-form-comfirmacao">
           <h1>Finalizar Compra</h1>
-          <div>
+          <div class="container-form-resumo">
             <div class="box-form">
               <div class="div-form-compra">
                 <h4>Infomações Pessoais</h4>
@@ -171,7 +171,7 @@
                       placeholder="Insira seu CEP"
                     />
                   </div>
-                   <div class="txt-input">
+                  <div class="txt-input">
                     <label for="complemento">Complemento *</label>
                     <input
                       type="text"
@@ -181,9 +181,118 @@
                   </div>
                 </form>
               </div>
+              <div class="div-form-compra">
+                <h4>Infomações de Pagamento</h4>
+                <form>
+                  <div class="box-input-radio">
+                    <label for="formaPagamneto">Forma de pagamento</label>
+                    <div class="divs-radio">
+                      <div class="radio-pagamento">
+                        <input type="radio" name="formaPagamneto" checked />
+                        <p>Cartão de Crédito</p>
+                      </div>
+                      <div class="radio-pagamento">
+                        <input type="radio" name="formaPagamneto" />
+                        <p>Boleto Bancário</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="txt-input">
+                    <label for="nomeCartao">Nome do Cartão *</label>
+                    <input
+                      type="text"
+                      name="nomeCartao"
+                      placeholder="Insira o nome do cartão"
+                    />
+                  </div>
+                  <div class="div-cartao-num">
+                    <div class="txt-input">
+                      <label for="numCartao">Número do Cartão *</label>
+                      <input
+                        type="number"
+                        name="numCartao"
+                        placeholder="Insira o numero do cartão"
+                      />
+                    </div>
+                    <div class="txt-input">
+                      <label for="valiadadeCartao"
+                        >Data de validade do Cartão *</label
+                      >
+                      <input
+                        type="number"
+                        name="valiadadeCartao"
+                        placeholder="Insira a validade do cartão"
+                      />
+                    </div>
+                  </div>
 
+                  <div class="txt-input">
+                    <label for="codCartao">CVV *</label>
+                    <input
+                      class="cod-cartao"
+                      type="number"
+                      name="codCartao"
+                      placeholder="CVV *"
+                    />
+                  </div>
+                </form>
+              </div>
             </div>
-            <div class="div-resumo-compra"></div>
+            <div class="div-resumo-compra">
+              <div class="box-resumo">
+                <h2>RESUMO</h2>
+                <div class="img-txt-resumo">
+                  <img src="../../imgs/Tenis-m-pedidos.png" alt="Tenis" />
+                  <div class="card-txt-resumo">
+                    <h6>Tênis Nike Revolution 6 Next Nature</h6>
+                    <p>Masculino</p>
+                  </div>
+                </div>
+                <div class="container-sub-fre-desc">
+                  <div class="sub-fre-desc">
+                    <p>Subtotal :</p>
+                    <h3>R$ 219,00</h3>
+                  </div>
+                  <div class="sub-fre-desc">
+                    <p>Frete :</p>
+                    <h3>R$ 00,0</h3>
+                  </div>
+                  <div class="sub-fre-desc">
+                    <p>Desconto :</p>
+                    <h3>R$ 30,00</h3>
+                  </div>
+                </div>
+                <div class="valor-total-resumo">
+                  <div>
+                    <h2>Total</h2>
+                  </div>
+                  <div class="total-preco">
+                    <h2>R$ 219,00</h2>
+                    <p>ou 10x de R$ 21,00 sem juros</p>
+                  </div>
+                </div>
+                <div class="btn-voltar">
+                  <a href="#"><button>Realizar Pagamneto</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="div-form-preco-final">
+            <h4>Finalizar Compra</h4>
+            <form>
+              <div class="valor-total-final">
+                <div class="txt-final">
+                  <h2>Total</h2>
+                </div>
+                <div class="total-preco-final">
+                  <h2>R$ 219,00</h2>
+                  <p>ou 10x de R$ 21,00 sem juros</p>
+                </div>
+              </div>
+              <div class="btn-pagamento-final">
+                <a href="#"><button>Realizar Pagamento</button></a>
+              </div>
+            </form>
           </div>
         </div>
       </div>
