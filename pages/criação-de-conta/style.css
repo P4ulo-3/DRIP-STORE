@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  letter-spacing: 1px;
+}
+
+:root {
+  /* ESCALA DE CINZA-------------- */
+  --darkGray: #1f1f1f;
+  --darkGray2: #474747;
+  --darkGray3: #666666;
+  --ligthGray: #8f8f8f;
+  --ligthGray2: #cccccc;
+  --ligthGray3: #f5f5f5;
+  --White1: #ffffff;
+
+  /* OUTRAS CORES------------------ */
+  --Primary: #c92071;
+  --Secondary: #b5b6f2;
+  --Tertiary: #991956;
+  --Error: #ee4266;
+  --Success: #52ca76;
+  --Warning: #f6aa1c;
+  --primaryG: #c92071;
+  --primaryGCor2: #edabca;
+  --SecondaryG: #b5b6f2;
+  --secondaryGCor2: #efefff;
+}
+/* HEADER */
+header {
+  background-color: var(--White1);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header img {
+  width: 172.5px;
+}
+.header-container {
+  width: 90%;
+}
+.container-section-banner {
+  background-image: linear-gradient(
+    to bottom,
+    var(--Secondary),
+    var(--secondaryGCor2)
+  );
+
+  display: flex;
+  justify-content: center;
+}
+/* BANNER E TELA CRAIR CONTA */
+.container-div-banner {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 50px 0px;
+}
+
+.container-crie-conta {
+  background-color: var(--White1);
+  width: 583px;
+  height: 399px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+}
+.titulo-e-subtitulo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.titulo-e-subtitulo h1 {
+  font-size: 32px;
+  color: var(--darkGray);
+}
+.titulo-e-subtitulo p {
+  font-size: 16px;
+  color: var(--darkGray2);
+}
+.titulo-e-subtitulo a {
+  font-size: 16px;
+  color: var(--darkGray2);
+}
+input {
+  padding: 20px;
+  width: 523px;
+  height: 60px;
+  font-size: 16px;
+  letter-spacing: 0.75px;
+  font-weight: 400;
+  border-radius: 8px;
+  background-color: var(--ligthGray3);
+  outline: none;
+  border: 0;
+}
+label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--darkGray2);
+  padding-bottom: 5px;
+  border: 0;
+}
+.botao-criar-conta button {
+  width: 523px;
+  height: 48px;
+  background-color: var(--Primary);
+  border-radius: 8px;
+  color: var(--White1);
+  border: 0;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.botao-criar-conta button:hover {
+  background-color: var(--primaryGCor2);
+}
+.login-com-redes-sociais {
+  display: flex;
+  width: 523px;
+  color: var(--darkGray2);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.imagens-redes {
+  display: flex;
+  gap: 20px;
+}
+#tenis1 {
+  width: 540px;
+}
+/* FOOTER */
+footer {
+  background-color: var(--darkGray);
+  color: var(--White1);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+footer nav ul li a {
+  color: var(--White1);
+  text-decoration: none;
+  font-size: 12px;
+}
+footer nav ul li a:hover {
+  border-bottom: 1px solid var(--White1);
+  opacity: 50%;
+  padding: 2px 0px;
+  transition: 0.4s ease;
+}
+footer nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+}
+
+footer h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+#lorem {
+  width: 307px;
+  height: fit-content;
+  font-size: 12px;
+  line-height: 20px;
+}
+#logo-white {
+  width: 253px;
+  height: 44px;
+}
+.imagens-redes-footer {
+  height: 20px;
+
+  width: fit-content;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.container-geral-footer {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--ligthGray2);
+}
+.logo-lorem-e-redes {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.footer-informacoes {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-categorias {
+  width: fit-content;
+}
+.footer-contatos {
+  width: 233px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-endereco-telefone {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-contatos p {
+  line-height: 20px;
+}
+
+.footer-assinatura {
+  width: 90%;
+  font-size: 8px;
+  font: weight 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+/* Responsividade */
+
+@media (max-width: 375px) {
+  header {
+    height: 64px;
+  }
+  header img {
+    width: 138px;
+  }
+  .header-container {
+    width: 138px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #tenis1 {
+    display: none;
+  }
+
+  .container-div-banner {
+    display: flex;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-crie-conta {
+    width: 315px;
+    height: 441px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .titulo-e-subtitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .titulo-e-subtitulo h1 {
+    font-size: 22px;
+  }
+  .titulo-e-subtitulo p {
+    font-size: 14px;
+  }
+  .titulo-e-subtitulo a {
+    font-size: 14px;
+  }
+
+  .botao-criar-conta button {
+    width: 255px;
+  }
+  input {
+    width: 255px;
+  }
+  .login-com-redes-sociais {
+    display: flex;
+    flex-direction: column;
+  }
+  /* FOOTER */
+  footer {
+    width: 375px;
+  }
+
+  #logo-white {
+    height: 29.57px;
+    width: 170px;
+  }
+  .imagens-redes-footer {
+    height: 20px;
+
+    width: fit-content;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  .container-geral-footer {
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .logo-lorem-e-redes {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .footer-informacoes {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .footer-categorias {
+    width: fit-content;
+  }
+  .footer-contatos {
+    width: 233px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-endereco-telefone {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-contatos p {
+    line-height: 20px;
+  }
+
+  .footer-assinatura {
+    width: 90%;
+    font-size: 8px;
+    font: weight 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+}
