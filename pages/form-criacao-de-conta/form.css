@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  letter-spacing: 1px;
+}
+
+:root {
+  /* ESCALA DE CINZA-------------- */
+  --darkGray: #1f1f1f;
+  --darkGray2: #474747;
+  --darkGray3: #666666;
+  --ligthGray: #8f8f8f;
+  --ligthGray2: #cccccc;
+  --ligthGray3: #f5f5f5;
+  --White1: #ffffff;
+
+  /* OUTRAS CORES------------------ */
+  --Primary: #c92071;
+  --Secondary: #b5b6f2;
+  --Tertiary: #991956;
+  --Error: #ee4266;
+  --Success: #52ca76;
+  --Warning: #f6aa1c;
+  --primaryG: #c92071;
+  --primaryGCor2: #edabca;
+  --SecondaryG: #b5b6f2;
+  --secondaryGCor2: #efefff;
+}
+/* HEADER */
+header {
+  background-color: var(--White1);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header img {
+  width: 172.5px;
+}
+.header-container {
+  width: 90%;
+}
+
+/* FORMULÁRIO */
+
+.section-container {
+  width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f8fe;
+}
+
+.div-container-geral {
+  display: flex;
+  width: 750px;
+  height: max-content;
+  justify-content: center;
+  flex-direction: column;
+
+  margin: 70px;
+  gap: 15px;
+}
+
+.h1-criar-conta {
+  width: max-content;
+  font-size: 32px;
+  color: var(--darkGray);
+}
+hr {
+  border: none;
+  border-top: 1px solid var(--ligthGray2);
+}
+.informacoes-pessoais {
+  display: flex;
+  width: 750px;
+  height: 538px;
+  border-radius: 4px;
+  padding: 30px;
+  gap: 20px;
+  flex-direction: column;
+  font-size: 14px;
+  background-color: var(--White1);
+  color: var(--darkGray2);
+
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.input-form {
+  width: 690px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: var(--ligthGray3);
+  outline: none;
+  border: 0;
+  padding: 20px;
+  font-size: 16px;
+  letter-spacing: 0.75px;
+}
+.input-check {
+  color: var(--darkGray2);
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+input::placeholder {
+  font-size: 16px;
+  color: var(--darkGray3);
+  opacity: 60%;
+}
+input[type="checkbox"] {
+  transform: scale(1.5);
+  margin: 8px;
+  font-size: 12px;
+  accent-color: var(--Primary);
+}
+
+label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--darkGray2);
+  letter-spacing: 0.75px;
+}
+
+.informacoes-de-entrega {
+  display: flex;
+  width: 750px;
+  height: 647px;
+  border-radius: 4px;
+  padding: 30px;
+  gap: 20px;
+  flex-direction: column;
+  background-color: var(--White1);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--darkGray2);
+}
+
+.botao-criar-conta button {
+  background-color: var(--Primary);
+  color: var(--White1);
+  width: 750px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 8px;
+  outline: none;
+  border: 0px;
+}
+.botao-criar-conta button:hover {
+  background-color: var(--primaryGCor2);
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--darkGray);
+  color: var(--White1);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+footer nav ul li a {
+  color: var(--White1);
+  text-decoration: none;
+  font-size: 12px;
+}
+footer nav ul li a:hover {
+  border-bottom: 1px solid var(--White1);
+  opacity: 50%;
+  padding: 2px 0px;
+  transition: 0.4s ease;
+}
+footer nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+}
+
+footer h3 {
+  font-size: 14px;
+}
+#lorem {
+  width: 307px;
+  height: fit-content;
+  font-size: 12px;
+  line-height: 20px;
+}
+#logo-white {
+  width: 253px;
+  height: 44px;
+}
+.imagens-redes-footer {
+  height: 20px;
+
+  width: fit-content;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.container-geral-footer {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--ligthGray2);
+}
+.logo-lorem-e-redes {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.footer-informacoes {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-categorias {
+  width: fit-content;
+}
+.footer-contatos {
+  width: 233px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-endereco-telefone {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-contatos p {
+  line-height: 20px;
+}
+
+.footer-assinatura {
+  width: 90%;
+  font-size: 8px;
+  font: weight 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+@media (max-width: 375px) {
+  header {
+    height: 64px;
+  }
+  header img {
+    width: 138px;
+  }
+  .header-container {
+    width: 138px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* FORMULÁRIO */
+
+  .section-container {
+    width: 375px;
+  }
+
+  .div-container-geral {
+    width: 315px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .h1-criar-conta {
+    font-size: 22px;
+  }
+  .informacoes-pessoais {
+    width: 315px;
+  }
+  .input-form {
+    width: 255px;
+  }
+  .informacoes-de-entrega {
+    width: 315px;
+  }
+  .botao-criar-conta button {
+    width: 315px;
+  }
+  .input-check {
+    display: flex;
+    align-items: start;
+    width: 315px;
+  }
+
+  /* FOOTER */
+  footer {
+    width: 375px;
+  }
+
+  #logo-white {
+    height: 29.57px;
+    width: 170px;
+  }
+  .imagens-redes-footer {
+    height: 20px;
+    width: fit-content;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  .container-geral-footer {
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .logo-lorem-e-redes {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .footer-informacoes {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .footer-categorias {
+    width: fit-content;
+  }
+  .footer-contatos {
+    width: 233px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-endereco-telefone {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-contatos p {
+    line-height: 20px;
+  }
+
+  .footer-assinatura {
+    width: 90%;
+    font-size: 8px;
+    font: weight 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+}
