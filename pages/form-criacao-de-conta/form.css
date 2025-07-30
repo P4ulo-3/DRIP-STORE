@@ -47,13 +47,17 @@ header img {
 }
 
 /* FORMULÁRIO */
-
+body{
+  background-color: #f9f8fe;
+}
 .section-container {
   width: 1440px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f9f8fe;
+  
+  
 }
 
 .div-container-geral {
