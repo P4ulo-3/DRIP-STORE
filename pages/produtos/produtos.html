@@ -19,7 +19,6 @@
                 type="text"
                 placeholder="Pesquisar produto..."
               />
-
               <i class="bi bi-search lupa"></i>
             </div>
             <a class="cadastrar" href="#">Cadastre-se</a>
@@ -43,366 +42,77 @@
     </header>
     <!-- Fim Menu----------------  -->
 
-    <!-- Produtos - Douglas------------------------>
-
-    <section class="produtos">
-      <div class="filtro">
-        <p>
-          <span style="font-weight: bold">Resultado para "Tênis" </span>- 389
-          produtos
-        </p>
-        <select id="sort">
-          <option value="relevantes">
-            <span style="font-weight: bold">Ordenar por: </span>mais relevantes
-          </option>
-          <!-- Adicione mais opções conforme necessário -->
-        </select>
-      </div>
-      <div class="container-produtos-main">
-        <div class="asider-filtro">
-          <form>
-            <fieldset>
-              <legend>Filtrar por</legend>
-
-              <div class="filtros">
-                <label class="title-filter">Marca</label>
-                <div>
-                  <input
-                    type="checkbox"
-                    id="adiddas"
-                    name="marca"
-                    value="adiddas"
-                    checked
-                  />
-                  <label for="adiddas">Adiddas</label>
-                </div>
-                <div>
-                  <input
-                    type="checkbox"
-                    id="calenciaga"
-                    name="marca"
-                    value="calenciaga"
-                  />
-                  <label for="calenciaga">Calenciaga</label>
-                </div>
-                <div>
-                  <input
-                    type="checkbox"
-                    id="kswiss"
-                    name="marca"
-                    value="kswiss"
-                    checked
-                  />
-                  <label for="kswiss">K-Swiss</label>
-                </div>
-                <div>
-                  <input type="checkbox" id="nike" name="marca" value="nike" />
-                  <label for="nike">Nike</label>
-                </div>
-                <div>
-                  <input type="checkbox" id="puma" name="marca" value="puma" />
-                  <label for="puma">Puma</label>
-                </div>
-              </div>
-
-              <div class="filtros">
-                <label class="title-filter">Categoria</label>
-                <div>
-                  <input
-                    type="checkbox"
-                    id="esporte"
-                    name="categoria"
-                    value="esporte"
-                    checked
-                  />
-                  <label for="esporte">Esporte e lazer</label>
-                </div>
-                <div>
-                  <input
-                    type="checkbox"
-                    id="casual"
-                    name="categoria"
-                    value="casual"
-                  />
-                  <label for="casual">Casual</label>
-                </div>
-                <div>
-                  <input
-                    type="checkbox"
-                    id="utilitario"
-                    name="categoria"
-                    value="utilitario"
-                  />
-                  <label for="utilitario">Utilitário</label>
-                </div>
-                <div>
-                  <input
-                    type="checkbox"
-                    id="corrida"
-                    name="categoria"
-                    value="corrida"
-                  />
-                  <label for="corrida">Corrida</label>
-                </div>
-              </div>
-
-              <div class="filtros">
-                <label class="title-filter">Gênero</label>
-                <div>
-                  <input
-                    type="checkbox"
-                    id="masculino"
-                    name="genero"
-                    value="masculino"
-                    checked
-                  />
-                  <label for="masculino">Masculino</label>
-                </div>
-                <div>
-                  <input
-                    type="checkbox"
-                    id="feminino"
-                    name="genero"
-                    value="feminino"
-                    checked
-                  />
-                  <label for="feminino">Feminino</label>
-                </div>
-                <div>
-                  <input
-                    type="checkbox"
-                    id="unisex"
-                    name="genero"
-                    value="unisex"
-                  />
-                  <label for="unisex">Unisex</label>
-                </div>
-              </div>
-
-              <div class="filtros">
-                <label class="title-filter">Estado</label>
-                <div>
-                  <input
-                    type="radio"
-                    id="novo"
-                    name="estado"
-                    value="novo"
-                    checked
-                  />
-                  <label for="novo">Novo</label>
-                </div>
-                <div>
-                  <input type="radio" id="usado" name="estado" value="usado" />
-                  <label for="usado">Usado</label>
-                </div>
-              </div>
-            </fieldset>
-          </form>
-        </div>
-        <div class="container-cards">
-          <div class="card">
-            <img
-              src="../../imgs/Mask group.jpg"
-              class="image-card"
-              alt="Layer 1aa 2-1"
-            />
-            <p class="desconto">30% OFF</p>
-            <p>Tênis</p>
-            <h3>K-Swiss V8 - Masculino</h3>
-            <p>
-              <span style="text-decoration: line-through">R$ 300,00</span> R$
-              200,00
-            </p>
-          </div>
-          <div class="card">
-            <img
-              src="../../imgs/Mask group.jpg"
-              class="image-card"
-              alt="Layer 1aa 2-1"
-            />
-            <p class="desconto">30% OFF</p>
-            <p>Tênis</p>
-            <h3>K-Swiss V8 - Masculino</h3>
-            <p>
-              <span style="text-decoration: line-through">R$ 300,00</span> R$
-              200,00
-            </p>
-          </div>
-
-          <div class="card">
-            <img
-              src="../../imgs/Mask group.jpg"
-              class="image-card"
-              alt="Layer 1aa 2-1"
-            />
-            <p id="desconto"></p>
-            <p>Tênis</p>
-            <h3>K-Swiss V8 - Masculino</h3>
-            <p>
-              <span style="text-decoration: line-through">R$ 300,00</span> R$
-              200,00
-            </p>
-          </div>
-          <div class="card">
-            <img
-              src="../../imgs/Mask group.jpg"
-              class="image-card"
-              alt="Layer 1aa 2-1"
-            />
-            <p id="desconto"></p>
-            <p>Tênis</p>
-            <h3>K-Swiss V8 - Masculino</h3>
-            <p>
-              <span style="text-decoration: line-through">R$ 300,00</span> R$
-              200,00
-            </p>
-          </div>
-          <div class="card">
-            <img
-              src="../../imgs/Mask group.jpg"
-              class="image-card"
-              alt="Layer 1aa 2-1"
-            />
-            <p id="desconto"></p>
-            <p>Tênis</p>
-            <h3>K-Swiss V8 - Masculino</h3>
-            <p>
-              <span style="text-decoration: line-through">R$ 300,00</span> R$
-              200,00
-            </p>
-          </div>
-          <div class="card">
-            <img
-              src="../../imgs/Mask group.jpg"
-              class="image-card"
-              alt="Layer 1aa 2-1"
-            />
-            <p id="desconto"></p>
-            <p>Tênis</p>
-            <h3>K-Swiss V8 - Masculino</h3>
-            <p>
-              <span style="text-decoration: line-through">R$ 300,00</span> R$
-              200,00
-            </p>
-          </div>
-          <div class="card">
-            <img
-              src="../../imgs/Mask group.jpg"
-              class="image-card"
-              alt="Layer 1aa 2-1"
-            />
-            <p id="desconto"></p>
-            <p>Tênis</p>
-            <h3>K-Swiss V8 - Masculino</h3>
-            <p>
-              <span style="text-decoration: line-through">R$ 300,00</span> R$
-              200,00
-            </p>
-          </div>
-          <div class="card">
-            <img
-              src="../../imgs/Mask group.jpg"
-              class="image-card"
-              alt="Layer 1aa 2-1"
-            />
-            <p id="desconto"></p>
-            <p>Tênis</p>
-            <h3>K-Swiss V8 - Masculino</h3>
-            <p>
-              <span style="text-decoration: line-through">R$ 300,00</span> R$
-              200,00
-            </p>
-          </div>
-          <div class="card">
-            <img
-              src="../../imgs/Mask group.jpg"
-              class="image-card"
-              alt="Layer 1aa 2-1"
-            />
-            <p id="desconto"></p>
-            <p>Tênis</p>
-            <h3>K-Swiss V8 - Masculino</h3>
-            <p>
-              <span style="text-decoration: line-through">R$ 300,00</span> R$
-              200,00
-            </p>
-          </div>
-          <div class="card">
-            <img
-              src="../../imgs/Mask group.jpg"
-              class="image-card"
-              alt="Layer 1aa 2-1"
-            />
-            <p id="desconto"></p>
-            <p>Tênis</p>
-            <h3>K-Swiss V8 - Masculino</h3>
-            <p>
-              <span style="text-decoration: line-through">R$ 300,00</span> R$
-              200,00
-            </p>
-          </div>
-          <div class="card">
-            <img
-              src="../../imgs/Mask group.jpg"
-              class="image-card"
-              alt="Layer 1aa 2-1"
-            />
-            <p id="desconto"></p>
-            <p>Tênis</p>
-            <h3>K-Swiss V8 - Masculino</h3>
-            <p>
-              <span style="text-decoration: line-through">R$ 300,00</span> R$
-              200,00
-            </p>
-          </div>
-          <div class="card">
-            <img
-              src="../../imgs/Mask group.jpg"
-              class="image-card"
-              alt="Layer 1aa 2-1"
-            />
-            <p id="desconto"></p>
-            <p>Tênis</p>
-            <h3>K-Swiss V8 - Masculino</h3>
-            <p>
-              <span style="text-decoration: line-through">R$ 300,00</span> R$
-              200,00
-            </p>
-          </div>
-          <div class="card">
-            <img
-              src="../../imgs/Mask group.jpg"
-              class="image-card"
-              alt="Layer 1aa 2-1"
-            />
-            <p id="desconto"></p>
-            <p>Tênis</p>
-            <h3>K-Swiss V8 - Masculino</h3>
-            <p>
-              <span style="text-decoration: line-through">R$ 300,00</span> R$
-              200,00
-            </p>
-          </div>
-          <div class="card">
-            <img
-              src="../../imgs/Mask group.jpg"
-              class="image-card"
-              alt="Layer 1aa 2-1"
-            />
-            <p id="desconto"></p>
-            <p>Tênis</p>
-            <h3>K-Swiss V8 - Masculino</h3>
-            <p>
-              <span style="text-decoration: line-through">R$ 300,00</span> R$
-              200,00
-            </p>
+    <div class="resultados-header">
+          <div>Resultados para <strong>"Tênis"</strong> - 389 produtos</div>
+          <div class="ordenar-select">
+            Ordenar por:
+            <select>
+              <option>Mais relevantes</option>
+              <option>Menor preço</option>
+              <option>Maior preço</option>
+            </select>
           </div>
         </div>
-      </div>
-    </section>
 
-    <footer>
-      <!-- sendo feito pelo fabio -->
-    </footer>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="filtro-grupo">
+          <h3>Marca</h3>
+          <label><input type="checkbox" checked /> Adidas</label>
+          <label><input type="checkbox" /> Balenciaga</label>
+          <label><input type="checkbox" checked /> K-Swiss</label>
+          <label><input type="checkbox" /> Nike</label>
+          <label><input type="checkbox" /> Puma</label>
+        </div>
+
+        <div class="filtro-grupo">
+          <h3>Categoria</h3>
+          <label><input type="checkbox" checked /> Esporte e lazer</label>
+          <label><input type="checkbox" /> Casual</label>
+          <label><input type="checkbox" /> Utilitário</label>
+          <label><input type="checkbox" /> Corrida</label>
+        </div>
+
+        <div class="filtro-grupo">
+          <h3>Gênero</h3>
+          <label><input type="checkbox" checked /> Masculino</label>
+          <label><input type="checkbox" checked /> Feminino</label>
+          <label><input type="checkbox" /> Unisex</label>
+        </div>
+
+        <div class="filtro-grupo">
+          <h3>Estado</h3>
+          <label><input type="radio" name="estado" checked /> Novo</label>
+          <label><input type="radio" name="estado" /> Usado</label>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        
+
+        <div class="produtos-grid">
+          <!-- Produto 1 -->
+          <div class="card">
+            <div class="badge">30% OFF</div>
+            <div class="image-container">
+              <img
+                src="../../imgs/Layer 1aa 2-1.png"
+                alt="K-Swiss V8 - Masculino"
+              />
+            </div>
+            <div class="info">
+              <span class="categoria">Tênis</span>
+              <h2 class="nome">K-Swiss V8 - Masculino</h2>
+              <div class="preco">
+                <span class="original">$200</span>
+                <span class="desconto">$100</span>
+              </div>
+            </div>
+          </div>
+          <!-- Você pode adicionar mais cards de produtos aqui -->
+        </div>
+      </main>
+    </div>
+    <!-- Fim da div.container -->
   </body>
 </html>
