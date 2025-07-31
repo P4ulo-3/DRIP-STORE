@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 :root {
@@ -27,14 +28,29 @@
   --secondaryGCor2: #efefff;
 }
 
-/* Menu ------------------ */
-
+body {
+  background-color: #f9f8fe;
+  overflow-x: hidden;
+}
 .interface {
   max-width: 1440px;
+  height: auto;
   margin: 0 auto;
   padding: 0 4%;
 }
 
+/* Menu ------------------ */
+
+.menu-hamburger {
+  font-size: 2.1rem;
+  cursor: pointer;
+  display: none;
+}
+
+header {
+  width: 100%;
+  background-color: var(--White1);
+}
 .div-logo {
   display: flex;
   justify-content: space-between;
@@ -43,6 +59,7 @@
 
 .container-menu {
   padding: 2rem 0;
+  background-color: var(--White1);
 }
 
 .div-logo .logo {
@@ -54,11 +71,7 @@
   width: 559px;
   height: 60px;
   border-radius: 8px;
-}
-
-.input-menu {
   font-weight: 400;
-  font-family: "Inder", sans-serif;
   background-color: rgba(71, 71, 71, 0.1);
   font-size: 1.1rem;
   padding-left: 1rem;
@@ -73,13 +86,16 @@
 .lupa {
   position: absolute;
   right: 5%;
-  top: 30%;
+  top: 27%;
   cursor: pointer;
   font-size: 1.3rem;
   opacity: 60%;
   color: var(--darkGray3);
 }
 
+.box-input-mobile {
+  display: none;
+}
 .cadastrar {
   text-decoration: none;
   color: var(--darkGray2);
@@ -88,7 +104,6 @@
 }
 
 .div-logo a button {
-  font-family: "inder", sans-serif;
   background-color: var(--Primary);
   color: var(--ligthGray3);
   width: 7.5rem;
@@ -101,8 +116,28 @@
   font-weight: 700;
 }
 
+.buy {
+  position: relative;
+  
+}
+
 .carrinho {
   cursor: pointer;
+}
+
+.quant-car {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: var(--Primary);
+  color: var(--White1);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  top: -0.4rem;
+  right: -0.5rem;
 }
 
 .div-nav nav ul {
@@ -114,7 +149,6 @@
 
 .div-nav nav ul li a {
   text-decoration: none;
-  font-family: "inder", sans-serif;
   font-weight: 500;
 }
 
@@ -127,7 +161,217 @@
   font-weight: 600;
   border-bottom: 2px solid var(--Primary);
 }
+.box-nav-mobile {
+  display: none;
+}
+h4.titulo-nav-mobile {
+  color: var(--darkGray2);
+  font-size: 1rem;
+  letter-spacing: 0.75px;
+  font-weight: 700;
+}
+.div-nav-mobile {
+  position: absolute;
+  width: 80%;
+  bottom: 0;
+  top: 4.5rem;
+  left: 0;
+  z-index: 3;
+  background-color: var(--White1);
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.div-nav-mobile .menu-mobile-btn a button {
+  background-color: var(--Primary);
+  color: var(--ligthGray3);
+  width: 100%;
+  height: 2.5rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.div-nav-mobile nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 2rem;
+  list-style: none;
+}
+
+.div-nav-mobile nav ul li a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.75px;
+}
+
+.div-nav-mobile nav ul li .n-ativa-mobile {
+  color: var(--darkGray2);
+}
+
+.div-nav-mobile nav ul li .ativa-mobile {
+  color: var(--Primary);
+  font-weight: 600;
+  border-bottom: 2px solid var(--Primary);
+}
+
+.div-nav-mobile nav {
+  padding: 3rem 0;
+  width: 70%;
+  margin: 0 auto;
+}
+.menu-mobile-btn {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--ligthGray2);
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+.menu-mobile-btn a {
+  width: 100%;
+}
+
+.cadastrar-mobile {
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--darkGray2);
+  text-underline-offset: 3px;
+  color: var(--darkGray2);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.75px;
+}
+
 /* Menu Fim---------------- */
+
+/* Interação Carrinho--------------------------------- */
+.buy {
+  position: relative;
+}
+.container-inter-carrinho {
+  position: absolute;
+  width: 19.7rem;
+  height: auto;
+  background-color: var(--White1);
+  right: 10%;
+  z-index: 5;
+  padding: 1.5rem;
+  box-shadow: 0 4px 0.5rem var(--darkGray3);
+}
+.container-inter-carrinho {
+  display: none;
+}
+.container-inter-carrinho h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  color: var(--darkGray2);
+}
+.txt-item-carrinho h6 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  color: var(--darkGray);
+  line-height: 1.2rem;
+}
+
+.box-precos-carrinho {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 0.7rem;
+  margin-top: 0.5rem;
+  margin-right: 1.5rem;
+}
+
+.box-precos-carrinho .preco-carrinho {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  color: var(--darkGray2);
+}
+.box-precos-carrinho .preco-riscado {
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.75px;
+  color: var(--ligthGray2);
+  text-decoration: line-through;
+}
+
+.itens-do-carrinho {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  margin: 1.5rem 0;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--ligthGray2);
+  border-bottom: 1px solid var(--ligthGray2);
+  height: auto;
+}
+
+.item-car {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+.container-valor-total-carrinho {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.box-total-carrinho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box-total-carrinho .link-esvaziar {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  color: var(--darkGray2);
+  text-underline-offset: 2px;
+}
+.box-total-carrinho .txt-valor-total {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  color: var(--darkGray);
+}
+.box-total-carrinho p {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  color: var(--Error);
+}
+.box-total-carrinho .link-btn-carrinho .btn-carrinho  {
+  background-color: var(--Primary);
+  color: var(--ligthGray3);
+  width: 8.5rem;
+  height: 2.5rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+}
+
+/*////// fim Interação Carrinho--------------------------------- */
+
+css
 
 /* Produtos ------------------ */
 body {
@@ -190,6 +434,12 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 4%;
+  
+}
+
+.ordenar-select{
+  border: solid 1px black;
+  padding: 10px 15px;
 }
 
 .ordenar-select select {
@@ -198,13 +448,33 @@ body {
   border: 1px solid #ccc;
   font-size: 14px;
   cursor: pointer;
+  border:none;
 }
+
+.funil{
+  background-color: var(--Primary);
+  border-radius: 10px;
+  padding: 10px 13px;
+  display: none;
+}
+
+.funil i {
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 
 /* Grid produtos */
 .produtos-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  height: auto;
+}
+
+.main-content{
+  height: auto;
 }
 
 .card {
@@ -282,13 +552,111 @@ body {
   color: #000;
 }
 
-/* Responsivo simples */
-@media (max-width: 800px) {
-  .container {
-    flex-direction: column;
-  }
-  .sidebar {
-    width: 100%;
-    margin-bottom: 20px;
-  }
+
+/* FOOTER---------------------------------- */
+footer {
+  background-color: var(--darkGray);
+}
+
+.container-geral-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  height: auto;
+  color: var(--White1);
+  flex-wrap: wrap;
+  padding: 2.5rem 0;
+}
+.logo-lorem-e-redes {
+  width: 30%;
+  height: 15rem;
+  margin-bottom: 2.4rem;
+  padding-right: 2.7rem;
+}
+
+.logo-lorem-e-redes #lorem {
+  margin: 2.1rem 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+}
+.imagens-redes-footer {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.imagens-redes-footer img {
+  width: 1.3rem;
+  height: 1.4rem;
+}
+
+.footer-inf-categ {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10rem;
+  height: auto;
+}
+
+.footer-informacoes {
+  margin-top: 2.4rem;
+  height: 19rem;
+}
+.footer-informacoes h3 {
+  margin-bottom: 2rem;
+}
+
+.footer-informacoes nav ul {
+  list-style: none;
+}
+
+.footer-informacoes nav ul a {
+  text-decoration: none;
+  color: var(--White1);
+  line-height: 2.5rem;
+}
+
+.footer-categorias {
+  height: 16.5rem;
+}
+
+.footer-categorias h3 {
+  margin-bottom: 2rem;
+}
+
+.footer-categorias nav ul {
+  list-style: none;
+}
+
+.footer-categorias nav ul a {
+  text-decoration: none;
+  color: var(--White1);
+  line-height: 2.5rem;
+}
+
+.footer-contatos {
+  width: 15%;
+  margin-bottom: 4.2rem;
+  height: 11.9rem;
+}
+.footer-endereco-telefone {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 26px;
+}
+
+.footer-contatos h3 {
+  margin-bottom: 2rem;
+}
+
+.footer-assinatura p {
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 1.5rem 0;
+  color: var(--White1);
+  border-top: 1px solid var(--White1);
 }
