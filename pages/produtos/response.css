@@ -1,0 +1,493 @@
+
+@media (max-width: 1180px) {
+  .div-logo .logo {
+    width: 210px;
+    height: 35px;
+  }
+  .input-menu {
+    width: 400px;
+    height: 40px;
+    border-radius: 8px;
+  }
+
+  .lupa {
+    font-size: 1rem;
+  }
+
+  .item-card {
+    width: 32%;
+    height: auto;
+    padding: 1rem 0;
+  }
+  .box-cards-mais-destaques {
+    gap: 3rem;
+  }
+
+  .container-txt-oferta .txt-especial-oferta {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .img-tenis-oferta {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1087px) {
+  .container-txt h1 {
+    width: 33rem;
+    font-size: 3.5rem;
+    letter-spacing: 4px;
+    line-height: 4rem;
+  }
+  /* Footer----------------- */
+  .logo-lorem-e-redes {
+    width: 20%;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 1075px) {
+  /* Ativa o menu mobile------------ */
+  /* .box-nav-mobile {
+    display: block;
+  } */
+  /* Ativa o menu mobile------------ */
+
+  .produtos-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .img-ornamento {
+    display: none;
+  }
+
+  .div-logo a.link-menu-entrar button {
+    display: none;
+  }
+
+  .menu-hamburger {
+    display: block;
+  }
+
+  .div-nav nav {
+    display: none;
+  }
+
+  .item-card {
+    min-width: 350px;
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .div-logo {
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 1030px) {
+  .div-logo .logo {
+    width: 193px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 1020px) {
+  section .div-box-incio {
+    flex-direction: column-reverse;
+    height: auto;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+
+  .img-tenis-inicio {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .img-secion-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-ornamento {
+    display: none;
+  }
+
+  .container-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .div-box-oferta {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 0;
+    gap: 2rem;
+  }
+
+  .div-box-oferta .container-txt-oferta {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+  }
+
+  .div-box-oferta .div-imagens {
+    position: relative;
+  }
+
+  .div-box-oferta .div-imagens .img-eclipse {
+    left: 10%;
+  }
+  .img-tenis-oferta {
+    width: 90%;
+  }
+
+  .container-geral-footer {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .logo-lorem-e-redes {
+    text-align: start;
+    width: 70%;
+    height: auto;
+    margin-bottom: 0rem;
+    padding-right: 0rem;
+  }
+
+  .footer-inf-categ {
+    justify-content: start;
+    width: 70%;
+  }
+
+  .footer-informacoes {
+    margin-top: 0;
+    height: auto;
+  }
+
+  .footer-informacoes nav ul a {
+    line-height: 2rem;
+  }
+
+  .footer-categorias nav ul a {
+    line-height: 2rem;
+  }
+
+  .footer-categorias {
+    padding-bottom: 2rem;
+    height: auto;
+  }
+
+  .footer-inf-categ {
+    gap: 5rem;
+  }
+
+  .footer-contatos {
+    width: 70%;
+    margin-bottom: 1rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 988px) {
+  .container-cards-produto {
+    justify-content: space-around;
+  }
+
+  .cadastrar{
+    display:none;
+  }
+}
+
+@media (max-width: 831px) {
+    .sidebar{
+    display: none;
+    }
+
+    .resultado-pesquisa{
+        display:none;
+    }
+
+    .funil{
+        display: flex;
+    }
+
+    .resultados-header{
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 775px) {
+  .box-cards-mais-destaques {
+    justify-content: flex-start;
+    gap: 2rem;
+    overflow-x: auto;
+    padding: 1rem;
+    scroll-behavior: smooth;
+  }
+  .input-menu {
+    width: auto;
+  }
+
+  .item-card {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 667px) {
+  .container-cards-produto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem; /* Reduz o espaçamento entre os cards */
+    justify-content: center;
+  
+    
+    
+  }
+
+  .item-card-produto {
+    width: 95%; /* Aumenta um pouco o tamanho dos cards */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    text-align: left; /* Garante que o texto fique alinhado à esquerda */
+    margin: 0 auto;
+  }
+
+  .img-produto {
+    width: 10rem; /* Aumenta o tamanho da imagem */
+    height: 10rem;
+  }
+
+  .img-produto p {
+    font-size: 0.8rem; /* Ajusta o tamanho da fonte */
+    padding: 0.4rem 0.8rem; /* Ajusta o padding para se adaptar ao tamanho do card */
+    top: 1rem; /* Ajusta a posição vertical */
+    left: 1rem; /* Ajusta a posição horizontal */
+  }
+
+  .img-produto img {
+    width: 100%; /* Garante que a imagem ocupe todo o espaço do contêiner */
+  }
+
+  .item-card-produto .modelo-produto {
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    overflow: hidden; /* Esconde o texto que ultrapassar o limite */
+    text-overflow: ellipsis; /* Adiciona reticências caso o texto seja muito longo */
+  }
+
+  .item-card-produto p.preco-novo,
+  .item-card-produto p.preco-riscado {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+  }
+}
+@media (max-width: 610px) {
+  /* Ativa o input Mobile------------ */
+  .box-input-mobile {
+    display: none;
+  }
+  .container-input-mobile {
+    position: relative;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .input-menu-mobile {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    font-weight: 400;
+    background-color: rgba(71, 71, 71, 0.1);
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    opacity: 60%;
+    border: none;
+  }
+  .lupa-mobile {
+    position: absolute;
+    right: 10%;
+    top: 27%;
+    cursor: pointer;
+    font-size: 1.3rem;
+    opacity: 60%;
+    color: var(--darkGray3);
+  }
+  /* Fim Ativa o input Mobile------------ */
+
+  .div-logo {
+    position: relative;
+  }
+  .div-logo .logo {
+    position: absolute;
+    left: 24%;
+    width: 175px;
+    height: 34px;
+  }
+  .lupa {
+    position: absolute;
+    font-size: 1.3rem;
+    right: -10rem;
+    top: -0.8rem;
+  }
+
+  .container-txt,
+  .container-txt a button,
+  .btn-oferta-inicio,
+  .container-txt h1 {
+    width: 100%;
+  }
+
+  .container-cards-produto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; /* Reduz o espaçamento entre os cards */
+  }
+
+  .div-box-oferta {
+    display: flex;
+    flex-direction: column; /* Alinha o texto e as imagens em uma coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    gap: 2rem; /* Espaçamento entre o texto e as imagens */
+  }
+
+  .ver-produtos {
+    margin-right: 0.5rem;
+  }
+
+  .div-box-oferta .container-txt-oferta {
+    text-align: center; /* Centraliza o texto */
+    width: 90%; /* Ajusta a largura do texto */
+  }
+
+  .div-box-oferta .div-imagens {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 1rem; /* Espaçamento entre as imagens */
+  }
+
+  .div-box-oferta .div-imagens img {
+    width: 80%; /* Ajusta a largura das imagens */
+    max-width: 300px; /* Define um limite máximo para o tamanho das imagens */
+    height: auto; /* Mantém a proporção das imagens */
+  }
+  .input-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .container-txt {
+    padding: 0 4%;
+  }
+  p.paragrafo-oferta {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+  }
+  .container-txt h1 {
+    width: 100%;
+    font-size: 2.8rem;
+    letter-spacing: 0.25px;
+    line-height: 3.5rem;
+  }
+  p.parag-2 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.25px;
+    line-height: 22px;
+    /* padding: 0 6rem; */
+    width: 100%;
+  }
+
+  .img-tenis-inicio {
+    margin-right: 3.8rem;
+    min-width: 250px;
+  }
+
+  .img-tenis-oferta {
+    width: 50%;
+    margin-right: 3rem;
+  }
+
+  .btn-oferta-inicio {
+    width: 100%;
+  }
+
+  .div-box-oferta .container-txt-oferta {
+    padding: 3rem 0;
+
+    /* margin-bottom: 4.3rem; */
+  }
+  .container-txt-oferta .paragrafo-oferta-especial {
+    color: var(--Warning);
+    width: 100%;
+  }
+  p.paragrafo-oferta {
+    color: var(--Primary);
+  }
+
+  .container-txt-oferta .txt-especial-oferta {
+    font-size: 2rem;
+    letter-spacing: 0.25px;
+    line-height: 2.5rem;
+  }
+  .container-txt-oferta .parag-oferta {
+    line-height: 22px;
+    font-size: 0.9rem;
+    letter-spacing: 0.25px;
+    font-weight: 500;
+  }
+  .div-box-oferta .container-txt-oferta {
+    justify-content: flex-start;
+    gap: 1.3rem;
+    text-align: start;
+  }
+  .btn-oferta {
+    width: 100%;
+  }
+  .container-geral-footer {
+    align-items: start;
+    padding: 2.5rem 1rem;
+    width: 100%;
+  }
+
+  .logo-lorem-e-redes {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    padding-right: 0;
+  }
+
+  .footer-inf-categ {
+    justify-content: start;
+    align-items: start;
+    gap: 0rem;
+    width: 90%;
+  }
+  .footer-informacoes {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-contatos {
+    width: 100%;
+    margin-bottom: 0.2rem;
+    height: 11.9rem;
+  }
+}
