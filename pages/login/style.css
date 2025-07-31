@@ -107,9 +107,14 @@ input {
   letter-spacing: 0.75px;
   font-weight: 400;
   border-radius: 8px;
-  background-color: var(--ligthGray3);
+  background-color: rgba(47, 47, 47,4%);
   outline: none;
   border: 0;
+}
+
+input::placeholder{
+  color: #666666;
+  opacity: 60%;
 }
 label {
   font-size: 12px;
